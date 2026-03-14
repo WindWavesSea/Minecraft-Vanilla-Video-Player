@@ -1,11 +1,11 @@
 # 我的世界原版视频播放器
 
 ## 目录
-### 	视频要求
+### 视频要求
 -  使用加速游戏刻播放60帧视频
 -  使用插帧播放60帧视频
 
-### 数据包内配置视频
+### 数据包内配置
 - 参数解析
 ###	原理
 
@@ -26,7 +26,7 @@
 
     frame_rate:60
 
-## 数据包内配置视频
+## 数据包内配置
 ###参数解析
 #### frame_zero 
 查看第一个图片的变化一般为全0，查看最后一个0前面有几个0，将这些0写到frame_zero里，如video0000.png应该将000写如，如下{frame_zero:"000"}
@@ -80,4 +80,14 @@
 
 其中**video_text**应写在sound配置项中
 
+
 	{sound:"video_text"}
+
+## 原理
+### **可以参考**
+
+### 装备遮罩（camera_overlay）的一点研究
+
+##### by CR_019  
+
+[点击查看](https://vanillalibrary.mcfpp.top/datapack-index/resources/dust/2/2-%E8%A3%85%E5%A4%87%E9%81%AE%E7%BD%A9.html)
