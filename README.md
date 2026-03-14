@@ -45,8 +45,9 @@
 #### max_frame(最大帧数)
 视频的最大帧数
 
-###示例
-####视频播放配置
+### 示例
+#### 视频播放配置
+
     data merge storage video:video_text \
 	{\
 	frame_zero:"000",\
