@@ -1,2 +1,30 @@
-# Minecraft-Vanilla-Video-Player
-Video Player driven by DataPack and Resource Pack
+# 我的世界原版视频播放器
+
+## 目录
+### 	[视频要求](#视频要求)	
+-  [使用加速游戏刻播放60帧视频](##使用加速游戏刻播放60帧视频)
+-  [使用插帧播放60帧视频](##使用插帧播放60帧视频)
+
+###[数据包内配置视频](#数据包内配置视频)
+- [参数解析](##参数解析)
+###	原理
+
+## 视频要求
+
+需要为图片序列(.png格式）
+
+### 使用加速游戏刻播放60帧视频 ###
+
+视频最好为20帧的，如果使用60帧的视频需要将[tick](http://https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/tick)设置为60
+
+    /tick rate 60
+设置目标[游戏刻](https://zh.minecraft.wiki/w/%E5%88%BB?variant=zh-cn#%E6%B8%B8%E6%88%8F%E5%88%BB)速率。
+
+### 使用插帧播放60帧视频 ###
+
+视频配置中frame_rate是原视频帧率，如果视频为60帧可以这样配置
+
+    frame_rate:60
+
+## 数据包内配置视频
+###参数解析
