@@ -63,8 +63,8 @@
 
 	scoreboard players set #video_text video_frame 6739
 
-#####资源包配置
-####sounds.json
+##### 资源包配置
+#### sounds.json
 	{
     	"video_text":{
         "sounds":[
