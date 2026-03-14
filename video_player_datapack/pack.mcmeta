@@ -1,0 +1,19 @@
+{
+    "pack":{
+        "description":
+        {
+            "text":"A Video Play Datapack By WindWaves_Sea"
+        },
+        "pack_format": 81,
+        "max_format": [94,1],
+        "min_format": [62,0]
+    },
+        "overlays": {
+        "entries": [
+            {
+                "directory": "1_21_5-6",
+                "formats": [62, 94]
+            }
+        ]
+    }
+}

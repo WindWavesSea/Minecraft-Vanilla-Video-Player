@@ -1,0 +1,6 @@
+scoreboard objectives remove video_frame_player
+scoreboard objectives remove video_frame
+#视频播放器总体设置
+scoreboard objectives remove video_setting
+scoreboard objectives remove video_play_execute
+function animations:player_video_play/reset/scoreboards

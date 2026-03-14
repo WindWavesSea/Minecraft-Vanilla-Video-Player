@@ -1,0 +1,5 @@
+#给与唯一播放值
+function animations:player_video_play/unique_value_play/give_unique_value
+
+#给与单独播放器
+function animations:player_video_play/storages/add_player_storages

@@ -1,0 +1,2 @@
+function animations:load/scoreboards
+function animations:load/storages

@@ -1,0 +1,1 @@
+scoreboard objectives add video_delete_storages dummy

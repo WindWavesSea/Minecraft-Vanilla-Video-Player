@@ -1,0 +1,1 @@
+$stopwatch remove video:video_play_player$(number)

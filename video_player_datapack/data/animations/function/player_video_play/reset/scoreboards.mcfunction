@@ -1,0 +1,1 @@
+scoreboard objectives remove video_uuid_storages

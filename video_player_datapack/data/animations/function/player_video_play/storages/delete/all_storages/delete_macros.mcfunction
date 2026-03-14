@@ -1,0 +1,7 @@
+$data remove storage video:player_number_$(number)_video_play frame_zero
+$data remove storage video:player_number_$(number)_video_play frame
+$data remove storage video:player_number_$(number)_video_play name
+$data remove storage video:player_number_$(number)_video_play path
+$data remove storage video:player_number_$(number)_video_play frame_rate
+$data remove storage video:player_number_$(number)_video_play sound
+$data remove storage video:player_number_$(number)_video_play sound_switch
