@@ -91,3 +91,27 @@
 ##### by CR_019  
 
 [点击查看](https://vanillalibrary.mcfpp.top/datapack-index/resources/dust/2/2-%E8%A3%85%E5%A4%87%E9%81%AE%E7%BD%A9.html)
+
+#指令
+
+## 播放
+
+### 使用/function播放
+
+	/function animations:start {video_name:"video_name"}
+
+### video_name就是上文data中写入的字符串
+
+## 终止播放
+	/function animations:stop
+
+## 暂停播放
+	/function animations:pause
+
+## 继续播放
+	/function animations:continue_play
+
+## 删除单个玩家的播放设置
+	function animations:player_video_play/storages/delete/delete_player {name:"name"}
+## 删除所有玩家的播放设置
+	function animations:player_video_play/storages/delete/all_storages/delete
