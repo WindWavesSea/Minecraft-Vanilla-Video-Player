@@ -47,6 +47,7 @@
 
 ### 示例
 #### 视频播放配置
+#####Function
 
     data merge storage video:video_text \
 	{\
@@ -62,4 +63,21 @@
 
 	scoreboard players set #video_text video_frame 6739
 
-####
+#####资源包配置
+####sounds.json
+	{
+    	"video_text":{
+        "sounds":[
+             {
+                 "name": "animation:video/video_text",
+                 "stream": true,
+              	 "volume": 0.8,
+               	 "weight": 1
+            	}
+      	  ]
+   	   }
+	}
+
+其中**video_text**应写在sound配置项中
+
+	{sound:"video_text"}
