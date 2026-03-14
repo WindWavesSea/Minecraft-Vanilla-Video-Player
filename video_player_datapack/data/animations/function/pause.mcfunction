@@ -1,0 +1,1 @@
+scoreboard players set @s video_player_pause 1

@@ -8,3 +8,4 @@ $item replace entity @s armor.head with paper[minecraft:equippable={camera_overl
 
 #开始执行播放tick
 scoreboard players set @s video_play_execute 1
+

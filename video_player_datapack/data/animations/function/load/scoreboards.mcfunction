@@ -12,4 +12,6 @@ scoreboard objectives add max_video_frame_player dummy
 
 #检测玩家是否播放视频的计分板
 scoreboard objectives add video_play_execute dummy
+
+scoreboard objectives add video_player_pause dummy
 function animations:player_video_play/load/scoreboards

@@ -1,1 +1,1 @@
-execute if score @s video_play_execute matches 1 run function animations:play
+execute if score @s video_play_execute matches 1 unless score @s video_player_pause matches 1 run function animations:play

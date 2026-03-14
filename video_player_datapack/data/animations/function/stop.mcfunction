@@ -14,6 +14,8 @@ function animations:player_video_play/delete_stopwatch with storage video:temp_p
 scoreboard players reset @s video_frame_player
 scoreboard players reset @s max_video_frame_player
 
+scoreboard players reset @s video_player_pause
+
 #重置临时数据空间
 data remove storage video:temp_player_video_play number
 
