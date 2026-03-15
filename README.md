@@ -155,6 +155,7 @@
 
 ## 删除单个玩家的播放设置
 	function animations:player_video_play/storages/delete/delete_player {name:"name"}
+**name**为玩家名
 	
 ## 删除所有玩家的播放设置
 	function animations:player_video_play/storages/delete/all_storages/delete
