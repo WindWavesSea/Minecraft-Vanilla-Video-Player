@@ -1,0 +1,2 @@
+$data merge storage video:player_number_$(number)_video_play {stopwatch:"video:video_play_player$(number)"}
+$function animations:player_video_play/frame/execute_frame_pause with storage video:player_number_$(number)_video_play

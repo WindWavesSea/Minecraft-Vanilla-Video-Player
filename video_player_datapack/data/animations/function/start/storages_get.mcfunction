@@ -6,6 +6,8 @@ $data modify storage video:player_number_$(number)_video_play frame_rate set fro
 $data modify storage video:player_number_$(number)_video_play sound set from storage video:$(video_name) sound
 $data modify storage video:player_number_$(number)_video_play sound_switch set from storage video:$(video_name) sound_switch
 $data modify storage video:player_number_$(number)_video_play max_frame set from storage video:$(video_name) max_frame
+$data modify storage video:player_number_$(number)_video_play blender set from storage video:$(video_name) blender
+$data modify storage video:player_number_$(number)_video_play blender_name set from storage video:$(video_name) blender_name
 
 #新建一个stopwatch来记录秒数便于抽帧播放
 $stopwatch create video:video_play_player$(number)

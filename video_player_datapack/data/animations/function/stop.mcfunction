@@ -15,6 +15,9 @@ scoreboard players reset @s video_frame_player
 scoreboard players reset @s max_video_frame_player
 
 scoreboard players reset @s video_player_pause
+scoreboard players reset @s video_frame_player_pause
+scoreboard players reset @s video_frame_player_pause1
+scoreboard players reset @s video_frame_player_pause2
 
 #重置临时数据空间
 data remove storage video:temp_player_video_play number

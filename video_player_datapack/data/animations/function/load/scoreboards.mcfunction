@@ -1,3 +1,6 @@
+#uuid分配
+scoreboard objectives add video_uuid_storages dummy
+
 #视频帧
 scoreboard objectives add video_frame_player dummy
 
@@ -14,4 +17,8 @@ scoreboard objectives add max_video_frame_player dummy
 scoreboard objectives add video_play_execute dummy
 
 scoreboard objectives add video_player_pause dummy
+
+scoreboard objectives add video_frame_player_pause dummy
+scoreboard objectives add video_frame_player_pause1 dummy
+scoreboard objectives add video_frame_player_pause2 dummy
 function animations:player_video_play/load/scoreboards

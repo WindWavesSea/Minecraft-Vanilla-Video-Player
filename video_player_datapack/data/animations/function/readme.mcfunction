@@ -12,6 +12,7 @@
 #           如果需要使用请自行在start/start_macros0开启#$tick rate $(frame_rate)将#号删除即可
 #           如果需要还原游戏刻请在stop里写上$tick rate 20
 #   sound(视频声音) 如果视频有声音需要在此写上sounds.json定义的视频声音播放 参考playsound来写
-#   sound_switch(声音是否启用)输入false/true来控制 {sound_switch:false/true}
+#   sound_switch(声音是否启用)输入false/true来控制 {sound_switch:"false/true"}
 #   max_frame(最大帧数)
+#   blender 是否为blender输出的图片序列，如果是请开启 {blender:"false/true"}
 ##获取文件计分板使用Storages来方便传参

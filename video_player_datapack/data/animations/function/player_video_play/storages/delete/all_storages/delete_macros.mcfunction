@@ -5,3 +5,6 @@ $data remove storage video:player_number_$(number)_video_play path
 $data remove storage video:player_number_$(number)_video_play frame_rate
 $data remove storage video:player_number_$(number)_video_play sound
 $data remove storage video:player_number_$(number)_video_play sound_switch
+$data remove storage video:player_number_$(number)_video_play blender
+$data remove storage video:player_number_$(number)_video_play blender_name
+$data remove storage video:player_number_$(number)_video_play max_frame

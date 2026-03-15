@@ -4,4 +4,7 @@ scoreboard objectives remove video_frame
 scoreboard objectives remove video_setting
 scoreboard objectives remove video_play_execute
 scoreboard objectives remove video_player_pause
+scoreboard objectives remove video_frame_player_pause
+scoreboard objectives remove video_frame_player_pause1
+scoreboard objectives remove video_frame_player_pause2
 function animations:player_video_play/reset/scoreboards
