@@ -39,11 +39,22 @@
 用来指定视频输出的物品文件位置 
 例如
      {video:text_video/}
+	 
 #### name (视频名称) 
-用来匹配帧号前的名称
+用来匹配帧号前的名称,**注意: 如果使用blender请按照情况填写blender_name**
 例如 video0000.png 数字前面的video就是名称，因此此处应该这样写
      {name:"video"}
 名称建议越短越好(因为使用宏，字符越少性能消耗越少)
+
+#### blender
+使用blender输出的图片序列请开启此选项
+	{blender:"true/false"}
+	
+#### blender_name
+使用blender请留空(不用blender无限填写)
+**如果帧号前有名称请按照上方视频名称提到的方式填写**
+	{blender_name:""}
+	
 #### frame_rate(帧率) 
 用于**自定义帧率**, **只支持服务器**使用，服务器使用需要设置
        function-permission-level=3
@@ -69,7 +80,9 @@
 	frame_rate:"60",\
 	sound:"animation:video_text",\
 	sound_switch:true,\
-	max_frame:6739\
+	max_frame:6739,\
+	blender:"false",\
+	blender_name:"",\
 	}
 
 	scoreboard players set #video_text video_frame 6739
