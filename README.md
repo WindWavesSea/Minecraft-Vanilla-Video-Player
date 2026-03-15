@@ -121,7 +121,7 @@
 
 [点击查看](https://vanillalibrary.mcfpp.top/datapack-index/resources/dust/2/2-%E8%A3%85%E5%A4%87%E9%81%AE%E7%BD%A9.html)
 
-#指令
+# 指令
 
 ## 播放
 
