@@ -4,16 +4,22 @@
 ## 目录
 
 - [视频要求](#视频要求)
-	-  使用加速游戏刻播放60帧视频*
-    - 使用插帧播放60帧视频
+	-  [使用加速游戏刻播放60帧视频](#使用加速游戏刻播放60帧视频)
+    -  [使用插帧播放60帧视频](#使用插帧播放60帧视频)
 - [配置](#配置)
-    - 参数解析
-
+    - [参数解析](#参数解析)
+   	 - [frame_zero](#frame_zero)
+   	 - [frame(帧数)](#frame(帧数))
+   	 - [path（路径)](#path（路径))
 - [原理](#原理)
 
 - [示例](#示例)
 
 - [指令](#指令)
+	- [开始播放](#开始播放)
+ 	- [终止播放](#终止播放)
+	- [暂停播放](#暂停播放)
+	- [继续播放](#继续播放)
 
 
 ## 视频要求
@@ -189,35 +195,35 @@
 <a id="指令"></a>
 ## 指令
 
-## 播放
+### 播放
 
-### 使用/function播放
+#### 开始播放
 
 ```Minecraft_Command
 /function animations:start {video_name:"video_name"}
 ```
 
-### video_name就是上文data中写入的字符串
+**video_name**就是上文data中写入的字符串
 
-## 终止播放
+### 终止播放
 
 ```Minecraft_Command
 /function animations:stop
 ```
 
-## 暂停播放
+### 暂停播放
 
 ```Minecraft_Command
 /function animations:pause
 ```
 
-## 继续播放
+### 继续播放
 
 ```Minecraft_Command
 /function animations:continue_play
 ```
 
-## 删除单个玩家的播放设置
+### 删除单个玩家的播放设置
 
 ```Minecraft_Command
 /function animations:player_video_play/storages/delete/delete_player {name:"name"}
@@ -225,7 +231,7 @@
 
 **name**为玩家名
 
-## 删除所有玩家的播放设置
+### 删除所有玩家的播放设置
 
 ```Minecraft_Command
 /function animations:player_video_play/storages/delete/all_storages/delete
