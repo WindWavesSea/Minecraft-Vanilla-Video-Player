@@ -3,25 +3,36 @@
 
 ## Table of Contents
 
-### Video Requirements
-
-* Playing 60FPS video using accelerated game ticks
-
-* Playing 60FPS video using frame interpolation
-
-### Data Package Configuration
-
-* Parameter Explanation
-
-### Principle
+- [Video Requirements](#Video Requirements)
+    - [Play 60FPS Video Using Game Speed-Up](#Play 60fps Video Using Game Speed-Up)
+    - [Play 60FPS Video Using Frame Interpolation](#Play 60fps Video Using Frame Interpolation)
+- [Configuration](#Configuration)
+    - [Parameter Parsing](#Parameter Parsing)
+        - [frame_zero](#frame_zero)
+        - [frame](#frame)
+        - [path](#path)
+        - [name](#name)
+        - [blender](#blender)
+        - [blender_name](#blender_name)
+        - [frame_rate](#frame_rate)
+        - [sound](#sound)
+        - [sound_switch](#sound_switch)
+        - [max_frame](#max_frame)
+- [Example](#Example)
+- [Principle](#Principle)
+- [Commands](#Commands)
+    - [Start Playback](#Start Playback)
+    - [Stop Playback](#Stop Playback)
+    - [Pause Playback](#Pause Playback)
+    - [Resume Playback](#Resume Playback)
 
 ## Video Requirements
 
 Requires an image sequence (.png format)
 
-### Playing 60fps video using accelerated game ticks
+### Playing 60FPS video using accelerated game ticks
 
-The video is best at 20fps. If using a 60fps video, the [tick](http://https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/tick) needs to be set to 60.
+The video is best at 20FPS. If using a 60fps video, the [tick](http://https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/tick) needs to be set to 60.
 
 ```Minecraft_Command
 
@@ -30,9 +41,9 @@ The video is best at 20fps. If using a 60fps video, the [tick](http://https://zh
 ```
 Set the target [game tick](https://zh.minecraft.wiki/w/%E5%88%BB?variant=zh-cn#%E6%B8%B8%E6%88%8F%E5%88%BB) rate.
 
-### Playing 60fps Video Using Frame Interpolation
+### Playing 60FPS Video Using Frame Interpolation
 
-In the video configuration, `frame_rate` is the original video frame rate. If the video is 60fps, it can be configured like this:
+In the video configuration, `frame_rate` is the original video frame rate. If the video is 60FPS, it can be configured like this:
 
 `frame_rate:60`
 
