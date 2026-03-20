@@ -46,13 +46,13 @@ To check the changes in the first image, it's usually all zeros. Check how many 
 
 `{frame_zero:"000"}`
 
-#### frame (frame number)
+#### frame
 
 Used to control the current video frame (image) played by the player.
 
 For example, `{frame:1}`
 
-#### path (path)
+#### path
 
 <br />
 Used to specify the location of the item file for video output.
@@ -61,7 +61,7 @@ For example:
 
 `{video:text_video/}`
 
-#### name (video name)
+#### name
 
 Used to match the name before the frame number. **Note: If using Blender, please fill in `blender_name` accordingly.**
 
@@ -85,7 +85,7 @@ Leave this blank if using Blender (you can fill it in infinitely if not using Bl
 
 `{blender_name:""}`
 
-#### frame_rate (Frame Rate)
+#### frame_rate
 
 Used for **custom frame rate**, **only supported for server use**. Server use requires setting
 
@@ -93,19 +93,19 @@ Used for **custom frame rate**, **only supported for server use**. Server use re
 
 If **not a server, you also need to fill in the actual video frame rate for adaptive frame rate**. If a server needs to use this, please **enable $tick rate $(frame_rate) in start/start_macros0 and remove the hash symbol**. **If you need to restore the game timeline, please write $tick rate in stop.** 20**
 
-#### sound (Video Sound)
+#### sound
 
 **Requires sound_switch to be enabled**
 
 If the video has sound, you need to specify the video sound playback defined in sounds.json here. Refer to playsound for guidance.
 
-#### sound_switch (Sound Enable/Disable)
+#### sound_switch
 
 Enter false/true to control whether the sound is enabled/whether the video needs to play sound.
 
 `{sound_switch:"false/true"}`
 
-#### max_frame (Maximum Frames)
+#### max_frame
 
 Maximum number of frames in the video.
 
