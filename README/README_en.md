@@ -1,5 +1,5 @@
 # Minecraft Vanilla Video Player      
-[English](README/README_en.md)  [简体中文](README.md)
+[English](README/README_en.md)  [简体中文](main/README.md)
 
 ## Table of Contents
 
