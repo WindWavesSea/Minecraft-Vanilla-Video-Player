@@ -18,10 +18,8 @@
         - [sound](#sound)
         - [sound_switch](#sound_switch)
         - [max_frame](#max_frame)
-- [原理](#原理)
-
 - [示例](#示例)
-
+- [原理](#原理)
 - [指令](#指令)
 	- [开始播放](#开始播放)
  	- [终止播放](#终止播放)
