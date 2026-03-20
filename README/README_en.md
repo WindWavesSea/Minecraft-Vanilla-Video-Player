@@ -1,5 +1,9 @@
 # Minecraft Vanilla Video Player
 
+# README.md
+- en [English](README/README_en.md)
+- zh_CN [简体中文](README.md)
+
 ## Table of Contents
 
 ### Video Requirements
@@ -241,3 +245,4 @@ If the **namespace** is "video", then the **path** can be written as:
 
 /function animations:player_video_play/storages/delete/all_storages/delete
 ```
+
