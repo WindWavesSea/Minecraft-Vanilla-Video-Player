@@ -9,8 +9,8 @@
 - [配置](#配置)
     - [参数解析](#参数解析)
    	 - [frame_zero](#frame_zero)
-   	 - [frame(帧数)](#frame(帧数))
-   	 - [path（路径)](#path（路径))
+   	 - [frame](#frame(帧数))
+   	 - [path](#path（路径))
 - [原理](#原理)
 
 - [示例](#示例)
@@ -53,12 +53,14 @@
 
  ` {frame_zero:"000"}`
 
-#### frame(帧数)
+#### frame
+帧数
 
 用来控制玩家目前播放的视频帧(图片)
 例如{frame:1}
 
-#### path（路径)
+#### path
+路径
 
 <br />
 
@@ -67,7 +69,8 @@
 
  ` {video:text_video/}`
 
-#### name (视频名称)
+#### name
+视频名称
 
 用来匹配帧号前的名称,**注意: 如果使用blender请按照情况填写blender\_name**
 例如 video0000.png 数字前面的video就是名称，因此此处应该这样写
@@ -87,24 +90,28 @@
 **如果帧号前有名称请按照上方视频名称提到的方式填写**
 `{blender_name:""}`
 
-#### frame_rate(帧率)
+#### frame_rate
+帧率
 
 用于**自定义帧率**, **只支持服务器**使用，服务器使用需要设置
 `function-permission-level=3`
 如果**不是服务器也需要填写视频实际帧率用于自适应帧率**，如果服务器需要使用请**自行在start/start\_macros0开启$tick rate $(frame_rate)将井号删除即可**，**如果需要还原游戏刻请在stop里写上\$tick rate 20**
 
-#### sound(视频声音)
+#### sound
+视频声音
 
 **需要开启sound_switch才能使用**
 如果视频有声音需要在此写上sounds.json定义的视频声音播放 参考playsound来写
 
-#### sound_switch(声音是否启用)
+#### sound_switch
+声音是否启用
 
 输入false/true来控制声音是否开启/视频是否需要播放声音
 
 `{sound_switch:"false/true"}`
 
-#### max_frame(最大帧数)
+#### max_frame
+最大帧数
 
 视频的最大帧数
 
