@@ -4,7 +4,7 @@
 ## Table of Contents
 
 - [Video Requirements](#Video-Requirements)
-    - [Play 60FPS Video Using Game Speed-Up](#Play-60fps-Video-Using-Game-Speed-Up)
+    - [Playing 60FPS video using accelerated game ticks](#Playing-60FPS-video-using-accelerated-game-ticks)
     - [Play 60FPS Video Using Frame Interpolation](#Play-60fps-Video-Using-Frame-Interpolation)
 - [Configuration](#Configuration)
     - [Parameter Parsing](#Parameter-Parsing)
