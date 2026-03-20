@@ -9,8 +9,8 @@
 - [配置](#配置)
     - [参数解析](#参数解析)
    	 - [frame_zero](#frame_zero)
-   	 - [frame](#frame(帧数))
-   	 - [path](#path（路径))
+   	 - [frame](#frame)
+   	 - [path](#path)
 - [原理](#原理)
 
 - [示例](#示例)
