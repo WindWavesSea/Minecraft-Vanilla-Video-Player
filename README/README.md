@@ -1,5 +1,5 @@
 # 我的世界原版视频播放器
-[English](README/README_en.md)  [简体中文](README.md)
+[English](README_en.md)  [简体中文](README.md)
 
 ## 目录
 
