@@ -1,16 +1,3 @@
-***
-
-layout: minecraft\_vanilla\_video\_player
-title: 我的世界原版视频播放器
-date: 2026-03-18 00:15:19
-tags:
-\- 我的世界
-\- 原版技术性前置
-cover: <https://cloud-photo-cn.windwaves.top/Minecraft_Vanilla_Video_Player.png>
-feature: false
-
-***
-
 # 我的世界原版视频播放器
 
 ## 目录
