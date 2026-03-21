@@ -342,7 +342,7 @@ Since Minecraft supports adaptive textures, it is recommended to export smaller 
 
 Recommended image size: **960 * 540**
 
-## Important Notes
+## Notes
 Due to Mojang's Ishiyama code, images that have finished playing may remain in memory and cannot be cleared, potentially triggering memory overflow issues. It is not recommended to use this feature when memory is limited.
 
 Bug: [MC-277837](https://bugs.mojang.com/browse/MC/issues/MC-277837)
