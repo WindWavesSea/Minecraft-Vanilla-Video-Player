@@ -4,7 +4,7 @@
 > by WindWaves_Sea
 
 >
-> This article is also published on the author's [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/) and [Mmodrinth](https://modrinth.com/datapack/vanilla-video-player) repository
+> This article is also published on the author's [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/) and [Modrinth](https://modrinth.com/datapack/vanilla-video-player) repository
 
 >
 
