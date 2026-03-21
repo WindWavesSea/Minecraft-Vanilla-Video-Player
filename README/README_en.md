@@ -4,7 +4,7 @@
 > by WindWaves_Sea
 
 >
-> This article is also published on the author's [Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player) and Bilibili column, as well as this project's [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/) repository
+> This article is also published on the author's [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/) and [Mmodrinth](https://modrinth.com/datapack/vanilla-video-player) repository
 
 >
 
@@ -44,7 +44,7 @@ This project implements a pseudo-video playback effect by playing image sequence
 
 The data package is used to calculate frame rates and batch process frame files, and adaptively adjust frame rates to improve performance.
 
-It also provides some **variables** for quickly adding image sequences from the [resource pack](https://zh.minecraft.wiki/w/%E8%B5%84%E6%BA%90%E5%8C%85) for fast playback.
+It also provides some **variables** for quickly adding image sequences from the [resource pack](https://minecraft.wiki/w/Resource_pack) for fast playback.
 
 ### Warning
 
@@ -60,14 +60,14 @@ Requires an image sequence (.png format)
 
 ### Use accelerated game ticks to play 60fps video
 
-The video is best at 20fps. If using 60fps video, the [tick](http://https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/tick) needs to be set to 60.
+The video is best at 20fps. If using 60fps video, the [tick](https://minecraft.wiki/w/Commands/tick) needs to be set to 60.
 
 ```Minecraft_Command
 
 /tick rate 60
 
 ```
-Set the target [game tick](https://zh.minecraft.wiki/w/%E5%88%BB?variant=zh-cn#%E6%B8%B8%E6%88%8F%E5%88%BB) rate.
+Set the target [game tick](https://minecraft.wiki/w/Tick) rate.
 
 ### Playing 60fps Video Using Frame Interpolation
 
@@ -137,7 +137,7 @@ Video sound
 
 If the video has sound, you need to specify the video sound playback defined in `sounds.json` here.
 
-Refer to [playsound](https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/playsound?variant=zh-cn) for guidance.
+Refer to [playsound](https://minecraft.wiki/w/Commands/playsound) for guidance.
 
 #### `sound_switch` Whether sound is enabled<br> Enter `false`/`true` to control whether sound is enabled/whether sound is played in the video.
 
@@ -149,7 +149,7 @@ Refer to [playsound](https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/playsound?va
 
 <br><br> Sets where an item's overlay is enabled.<br>This value should be one of the following: head, body, chest, feet, legs, mainhand, offhand, saddle
 
-<br>See details:<br>[equippable:camera_overlay](https://zh.minecraft.wiki/w/%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6#equippable)
+<br>See details:<br>[equippable:camera_overlay](https://minecraft.wiki/w/Data_component_format#equippable)
 
 ### Example
 
@@ -209,9 +209,9 @@ The **video_text** should be written in the sound configuration item
 
 <br>You can add many of these configurations to add new video sounds. The example below is a blank template.
 
-<br>More configuration details can be found in [JAVA version sound events](https://zh.minecraft.wiki/w/Java%E7%89%88%E5%A3%B0%E9%9F%B3%E4%BA%8B%E4%BB%B6)
+<br>More configuration details can be found in [JAVA version sound.json](https://minecraft.wiki/w/Sounds.json)
 
-<br>You can find it in [resource packs](https://zh.minecraft.wiki/w/Java%E7%89%88%E5%A3%B0%E9%9F%B3%E4%BA%8B%E4%BB%B6) Create a new folder named "Video" within the texture folder in minecraft.wiki/w/%E8%B5%84%E6%BA%90%E5%8C%85 to store the image sequence.
+<br>You can find it in [resource packs](https://minecraft.wiki/w/Resource_pack) Create a new folder named "Video" within the texture folder to store the image sequence.
 
 ```video/video_text/video0000.png```
 
@@ -225,7 +225,7 @@ If the **namespace** is "video", then the **path** can be written like this:
 
 ### **Reference Available**
 
-### [A Little Research on Camera Overlay](https://vanillalibrary.mcfpp.top/datapack-index/resources/dust/2/2-%E8%A3%85%E5%A4%87%E9%81%AE%E7%BD%A9.html)
+### [Camera Overlay]((https://minecraft.wiki/w/Data_component_format#equippable)
 
 ##### by CR_019
 
