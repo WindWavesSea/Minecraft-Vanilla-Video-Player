@@ -336,13 +336,13 @@ Click "Export" to save the image sequence.
 
 These are several common methods for exporting image sequences using various software. You can choose the appropriate software and steps based on your needs.
 
-###Recommended Size
+### Recommended Size
 
 Since Minecraft supports adaptive textures, it is recommended to export smaller images to save disk space and reduce resource pack size.
 
 Recommended image size: **960 * 540**
 
-##Important Notes
+## Important Notes
 Due to Mojang's Ishiyama code, images that have finished playing may remain in memory and cannot be cleared, potentially triggering memory overflow issues. It is not recommended to use this feature when memory is limited.
 
 Bug: [MC-277837](https://bugs.mojang.com/browse/MC/issues/MC-277837)
