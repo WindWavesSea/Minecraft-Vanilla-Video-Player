@@ -225,9 +225,8 @@ If the **namespace** is "video", then the **path** can be written like this:
 
 ### **Reference Available**
 
-### [Camera Overlay]((https://minecraft.wiki/w/Data_component_format#equippable)
+### [Camera Overlay](https://minecraft.wiki/w/Data_component_format#equippable)
 
-##### by CR_019
 
 ## Commands
 
