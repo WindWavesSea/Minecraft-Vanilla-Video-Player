@@ -34,7 +34,7 @@
     - [Stop Playback](#Stop-Playback)
     - [Pause Playback](#Pause-Playback)
     - [Resume Playback](#Resume-Playback)
-- [About Sequence Images](#About-Sequence-Images)
+- [About Sequence Images](#About-Images-Sequence)
     - [How to Export Image Sequences](#How-to-Export-Image-Sequences)
     - [Recommended Size](#Recommended-Size)
 - [Notes](#Notes)
