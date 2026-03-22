@@ -1,0 +1,1 @@
+execute if score #reset.id.tick_run video_list matches 1 run function animations:video_delete/delete_only/run

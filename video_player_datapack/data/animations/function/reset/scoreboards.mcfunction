@@ -8,3 +8,5 @@ scoreboard objectives remove video_frame_player_pause
 scoreboard objectives remove video_frame_player_pause1
 scoreboard objectives remove video_frame_player_pause2
 function animations:player_video_play/reset/scoreboards
+
+function animations:video_add/reset/scoreboards

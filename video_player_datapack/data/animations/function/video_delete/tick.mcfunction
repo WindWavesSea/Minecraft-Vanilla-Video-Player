@@ -1,0 +1,2 @@
+function animations:video_delete/delete_all/tick
+function animations:video_delete/delete_only/tick

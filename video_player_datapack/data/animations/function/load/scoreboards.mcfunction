@@ -22,3 +22,5 @@ scoreboard objectives add video_frame_player_pause dummy
 scoreboard objectives add video_frame_player_pause1 dummy
 scoreboard objectives add video_frame_player_pause2 dummy
 function animations:player_video_play/load/scoreboards
+
+function animations:video_add/load/scoreboards

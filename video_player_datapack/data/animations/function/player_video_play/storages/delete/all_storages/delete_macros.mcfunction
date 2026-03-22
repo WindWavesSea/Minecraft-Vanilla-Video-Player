@@ -8,3 +8,4 @@ $data remove storage video:player_number_$(number)_video_play sound_switch
 $data remove storage video:player_number_$(number)_video_play blender
 $data remove storage video:player_number_$(number)_video_play blender_name
 $data remove storage video:player_number_$(number)_video_play max_frame
+$data remove storage video:player_number_$(number)_video_play slot

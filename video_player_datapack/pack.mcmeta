@@ -4,16 +4,8 @@
         {
             "text":"A Video Play Datapack By WindWaves_Sea"
         },
-        "pack_format": 81,
+        "supported_formats":[94,1],
         "max_format": [94,1],
-        "min_format": [62,0]
-    },
-        "overlays": {
-        "entries": [
-            {
-                "directory": "1_21_5-6",
-                "formats": [62, 94]
-            }
-        ]
+        "min_format": [94,1]
     }
 }

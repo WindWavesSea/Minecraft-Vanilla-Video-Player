@@ -1,5 +1,5 @@
 #播放视频声音
-$execute if data storage video:player_number_$(number)_video_play {sound_switch:"true"} run function animations:start/sound_play with storage video:player_number_$(number)_video_play
+$execute if data storage video:player_number_$(number)_video_play {sound_switch:true} run function animations:start/sound_play with storage video:player_number_$(number)_video_play
 
 $function animations:player_video_play/give {number:"$(number)"}
 

@@ -1,0 +1,1 @@
+execute if score #all_delete video_list matches 1 run function animations:video_delete/delete_all/run
