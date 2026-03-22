@@ -2,7 +2,7 @@
 [English](README/README_en.md) [简体中文](README.md)
 > by 洛风澜_Sea(WindWaves_Sea)
 > 
-> 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)以及此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库
+> 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库以及[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)
 >
 
 ## 目录
@@ -99,7 +99,7 @@
 
 #### name
 视频名称<br>
-用来匹配帧号前的名称,需要和命令存储名称一致即video:后面的名称**注意: 如果使用blender请按照情况填写blender_name**
+用来匹配帧号前的名称,需要和命令存储名称一致即video:后面的名称<br>**注意: 如果使用blender请按照情况填写blender_name**
 例如 video0000.png 数字前面的video就是名称，因此此处应该这样写
 
 ```{name:"video"}```
