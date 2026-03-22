@@ -1,5 +1,5 @@
 # 我的世界原版视频播放器
-[English](README_en.md) [简体中文](README.md)
+[English](README/README_en.md) [简体中文](README.md)
 > by 洛风澜_Sea(WindWaves_Sea)
 > 
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)以及此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库
@@ -9,27 +9,29 @@
 - [前言](#前言)
 - [视频要求](#视频要求)
 	-  [使用加速游戏刻播放60帧视频](#使用加速游戏刻播放60帧视频)
-    -  [使用插帧播放60帧视频](#使用插帧播放60帧视频)
+	-  [使用插帧播放60帧视频](#使用插帧播放60帧视频)
 - [配置](#配置)
-    - [参数解析](#参数解析)
-   	 	- [frame_zero](#frame_zero)
-   	 	- [frame](#frame)
-   	 	- [path](#path)
-        - [name](#name)
-        - [blender](#blender)
-        - [blender_name](#blender_name)
-        - [frame_rate](#frame_rate)
-        - [sound](#sound)
-        - [sound_switch](#sound_switch)
-        - [max_frame](#max_frame)
-        - [slot](#slot)
+	- [参数解析](#参数解析)
+		- [frame_zero](#frame_zero)
+		- [frame](#frame)
+		- [path](#path)
+		- [name](#name)
+		- [blender](#blender)
+		- [blender_name](#blender_name)
+		- [frame_rate](#frame_rate)
+		- [sound](#sound)
+		- [sound_switch](#sound_switch)
+		- [max_frame](#max_frame)
+		- [slot](#slot)
 - [示例](#示例)
 - [原理](#原理)
 - [指令](#指令)
 	- [开始播放](#开始播放)
- 	- [终止播放](#终止播放)
+	- [终止播放](#终止播放)
 	- [暂停播放](#暂停播放)
 	- [继续播放](#继续播放)
+	- [删除单一视频配置](#删除单一视频配置)
+	- [删除所有视频配置](#删除所有视频配置)
 - [关于序列图片](#关于序列图片)
 	- [如何导出序列图片](#如何导出序列图片)
 	- [推荐尺寸](#推荐尺寸)
@@ -41,7 +43,7 @@
 数据包用于计算帧数和批量处理帧文件、自适应帧数来提升性能。
 <br>也提供了一些**变量**用于快速添加[资源包](https://zh.minecraft.wiki/w/%E8%B5%84%E6%BA%90%E5%8C%85)中的序列图片实现快速播放
 
-###警告
+### 警告
 
 此**数据包**默认使用装备头部来触发装备遮罩，如果不想使用头部装备栏可以自行在dp中更改(目前V2.0需要这样做)
 
@@ -97,7 +99,7 @@
 
 #### name
 视频名称<br>
-用来匹配帧号前的名称,**注意: 如果使用blender请按照情况填写blender\_name**
+用来匹配帧号前的名称,需要和命令存储名称一致即video:后面的名称**注意: 如果使用blender请按照情况填写blender_name**
 例如 video0000.png 数字前面的video就是名称，因此此处应该这样写
 
 ```{name:"video"}```
@@ -151,23 +153,26 @@
 
 ```mcfunction
 
-	data merge storage video:video_text \
+	data merge storage video:text \
 	{\
 	frame_zero:"000",\
 	frame:"0",\
-	path:"animation:video_text/",\
-	name:"video",\
-	frame_rate:"60",\
-	sound:"animation:video_text",\
-	sound_switch:true,\
-	max_frame:6739,\
-	blender:"false",\
+	path:"animation:school/",\
+	name:"school",\
 	blender_name:"",\
+	frame_rate:"60",\
+	sound:"",\
+	sound_switch:false,\
+	max_frame:740,\
+	blender:true,\
+	slot:"head"\
 	}
 
-	scoreboard players set #video_text video_frame 6739
+	function animations:video_add/main with storage video:school
 
 ```
+
+**最后一行function必须在配置文件结尾写，且video:后面的命名必须和name值相同**
 
 ##### 资源包配置
 
@@ -176,21 +181,21 @@
 ```json
 
 	{
-    	"video_text":{
-        "sounds":[
-             {
-                 "name": "animation:video/video_text",
-                 "stream": true,
-              	 "volume": 0.8,
-               	 "weight": 1
-            	}
-      	  ]
-   	   },
+		"video_text":{
+		"sounds":[
+			 {
+				 "name": "animation:video/video_text",
+				 "stream": true,
+				 "volume": 0.8,
+				 "weight": 1
+				}
+		  ]
+	   },
 	   "":{
-                 "name": "",
-                 "stream": true,
-              	 "volume": 0.8,
-               	 "weight": 1
+				 "name": "",
+				 "stream": true,
+				 "volume": 0.8,
+				 "weight": 1
 	   }
 	}
 
@@ -267,8 +272,23 @@
 ```Minecraft_Command
 /function animations:player_video_play/storages/delete/all_storages/delete
 ```
-##关于序列图片
-###如何导出序列图片
+
+### 删除单一视频配置
+
+```Minecraft_Command
+/function animations:video_list/delete_only {name:"name"}
+```
+
+**name**为视频配置项中的name
+
+### 删除所有视频配置
+
+```Minecraft_Command
+/function animations:video_list/delete_all
+```
+
+## 关于序列图片
+### 如何导出序列图片
 
 1. 使用Adobe Animate导出PNG序列图
 步骤:
@@ -306,10 +326,10 @@
 
 以上是几种常见软件导出图像序列的方法，您可以根据自己的需求选择合适的软件和步骤进行操作。
 
-###推荐尺寸
+### 推荐尺寸
 由于我的世界支持自适应纹理，推荐导出较小尺寸的图片以节约硬盘空间减小资源包大小
 推荐导出**960 * 540**大小的图片
 
-##注意事项
+## 注意事项
 由于mojang石山代码，导致播放完的图片会一直在内存中无法清理，容易触发爆内存的问题，不建议在内存过小的情况下使用<br>
 Bug:[MC-277837](https://bugs.mojang.com/browse/MC/issues/MC-277837)

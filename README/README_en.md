@@ -34,6 +34,8 @@
     - [Stop Playback](#Stop-Playback)
     - [Delete playback settings for a single player](#Delete-playback-settings-for-a-single-player)
     - [Delete playback settings for all players](#Delete-playback-settings-for-all-players)
+    - [Deleting a single video configuration](#deleting-a-single-video-configuration)
+    - [Delete all video configurations](#delete-all-video-configurations)
 - [About Image Sequences](#About-Image-Sequences)
     - [How to Export Image Sequences](#How-to-Export-Image-Sequences)
     - [Recommended Size](#Recommended-Size)
@@ -99,7 +101,11 @@ For example:
 
 ```{video:text_video/}```
 
-#### name Video Name<br> Used to match the name before the frame number. **Note:** If using Blender, please fill in `blender_name` as needed.
+#### name 
+
+Video Name<br> 
+Used to match the name preceding the frame number, which needs to be consistent with the command storage name, that is, the name following "video:"
+<br>**Note:** If using Blender, please fill in `blender_name` as needed.
 
 For example, in `video0000.png`, the "video" before the number is the name, so it should be written like this:
 
@@ -159,22 +165,26 @@ Refer to [playsound](https://minecraft.wiki/w/Commands/playsound) for guidance.
 
 ```mcfunction
 
-data merge storage video:video_text \ {\ 
-frame_zero:"000",\ 
-frame:"0",\ 
-path:"animation:video_text/",\ 
-name:"video",\ 
-frame_rate:"60",\ 
-sound:"animation:video_text",\ 
-sound_switch:true,\ 
-max_frame:6739,\ 
-blender:"false",\ 
-blender_name:"",\ 
-} 
+    data merge storage video:text \
+    {\
+    frame_zero:"000",\
+    frame:"0",\
+    path:"animation:school/",\
+    name:"school",\
+    blender_name:"",\
+    frame_rate:"60",\
+    sound:"",\
+    sound_switch:false,\
+    max_frame:740,\
+    blender:true,\
+    slot:"head"\
+    }
 
-scoreboard players set #video_text video_frame 6739
+    function animations:video_add/main with storage video:school
 
 ```
+
+**The last line of the function must be written at the end of the configuration file, and the naming after "video:" must be the same as the value of "name"**
 
 ##### Resource package configuration
 
@@ -281,6 +291,21 @@ If the **namespace** is "video", then the **path** can be written like this:
 /function animations:player_video_play/storages/delete/all_storages/delete
 
 ```
+
+### Deleting a single video configuration
+
+```Minecraft_Command
+/function animations:video_list/delete_only {name:"name"}
+```
+
+**name** is the name in the video configuration item
+
+### Delete all video configurations
+
+```Minecraft_Command
+/function animations:video_list/delete_all
+```
+
 ## About Image Sequences
 
 ### How to Export Image Sequences

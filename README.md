@@ -30,6 +30,8 @@
  	- [终止播放](#终止播放)
 	- [暂停播放](#暂停播放)
 	- [继续播放](#继续播放)
+    - [删除单一视频配置](#删除单一视频配置)
+    - [删除所有视频配置](#删除所有视频配置)
 - [关于序列图片](#关于序列图片)
 	- [如何导出序列图片](#如何导出序列图片)
 	- [推荐尺寸](#推荐尺寸)
@@ -97,7 +99,7 @@
 
 #### name
 视频名称<br>
-用来匹配帧号前的名称,**注意: 如果使用blender请按照情况填写blender\_name**
+用来匹配帧号前的名称,需要和命令存储名称一致即video:后面的名称**注意: 如果使用blender请按照情况填写blender_name**
 例如 video0000.png 数字前面的video就是名称，因此此处应该这样写
 
 ```{name:"video"}```
@@ -151,23 +153,26 @@
 
 ```mcfunction
 
-	data merge storage video:video_text \
-	{\
-	frame_zero:"000",\
-	frame:"0",\
-	path:"animation:video_text/",\
-	name:"video",\
-	frame_rate:"60",\
-	sound:"animation:video_text",\
-	sound_switch:true,\
-	max_frame:6739,\
-	blender:"false",\
-	blender_name:"",\
-	}
+    data merge storage video:text \
+    {\
+    frame_zero:"000",\
+    frame:"0",\
+    path:"animation:school/",\
+    name:"school",\
+    blender_name:"",\
+    frame_rate:"60",\
+    sound:"",\
+    sound_switch:false,\
+    max_frame:740,\
+    blender:true,\
+    slot:"head"\
+    }
 
-	scoreboard players set #video_text video_frame 6739
+    function animations:video_add/main with storage video:school
 
 ```
+
+**最后一行function必须在配置文件结尾写，且video:后面的命名必须和name值相同**
 
 ##### 资源包配置
 
@@ -267,6 +272,21 @@
 ```Minecraft_Command
 /function animations:player_video_play/storages/delete/all_storages/delete
 ```
+
+### 删除单一视频配置
+
+```Minecraft_Command
+/function animations:video_list/delete_only {name:"name"}
+```
+
+**name**为视频配置项中的name
+
+### 删除所有视频配置
+
+```Minecraft_Command
+/function animations:video_list/delete_all
+```
+
 ## 关于序列图片
 ### 如何导出序列图片
 
