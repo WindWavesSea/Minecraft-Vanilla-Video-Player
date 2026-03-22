@@ -4,8 +4,10 @@
         {
             "text":"A Video Play Datapack By WindWaves_Sea"
         },
-        "supported_formats":[94,1],
-        "max_format": [94,1],
-        "min_format": [94,1]
+        "supported_formats":94,
+        "min_format": [
+            94,
+             1
+            ],
     }
 }
