@@ -157,8 +157,8 @@
     {\
     frame_zero:"000",\
     frame:"0",\
-    path:"animation:school/",\
-    name:"school",\
+    path:"animation:text/",\
+    name:"text",\
     blender_name:"",\
     frame_rate:"60",\
     sound:"",\
@@ -168,7 +168,7 @@
     slot:"head"\
     }
 
-    function animations:video_add/main with storage video:school
+    function animations:video_add/main with storage video:text
 
 ```
 
