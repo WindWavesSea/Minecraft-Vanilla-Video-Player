@@ -2,7 +2,7 @@
 $function animations:video_add/operation {name:"$(name)"}
 
 #写入list
-$execute store result storage video:temp_add_video video_name int 1 run data get storage video:$(name) name
+$data modify storage video:temp_add_video video_name set from storage video:$(name) name
 
 function animations:video_add/strorage_add with storage video:temp_add_video
 
