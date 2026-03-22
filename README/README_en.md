@@ -75,7 +75,7 @@ Set the target [game tick](https://minecraft.wiki/w/Tick) rate.
 
 In the video configuration, `frame_rate` is the original video frame rate. If the video is 60fps, you can configure it like this:
 
-``frame_rate:60```
+```frame_rate:60```
 
 ## Configuration
 
@@ -117,7 +117,7 @@ The name should be as short as possible (because using macros, fewer characters 
 
 For image sequences output by Blender, please enable this option:
 
-``{blender:"true/false"}```
+```{blender:"true/false"}```
 
 #### Blender_name
 
@@ -125,7 +125,7 @@ Leave this blank if using Blender (you can fill it in infinitely if not using Bl
 
 **If there is a name before the frame number, please fill it in as mentioned above regarding video names.**
 
-``{blender_name:""}```
+```{blender_name:""}```
 
 #### Frame_rate
 
@@ -133,7 +133,7 @@ Frame rate
 
 Used for **custom frame rate**, **Server-only support.** Server use requires configuration:
 
-``function-permission-level=3```
+```function-permission-level=3```
 
 If not using a server, you also need to specify the actual video frame rate for adaptive frame rate. If a server requires this, please enable `$tick rate $(frame_rate)` in `start/start_macros0` and remove the hash symbol. If you need to restore the game's progress, please add `$tick rate 20` to `stop`.
 
