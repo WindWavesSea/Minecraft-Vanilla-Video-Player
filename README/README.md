@@ -35,7 +35,6 @@
 				- [资源包配置](#资源包配置)
 			- [sounds.json](#soundsjson)
 	- [原理](#原理)
-		- [**可以参考**](#可以参考)
 		- [装备遮罩（camera\_overlay）的一点研究](#装备遮罩camera_overlay的一点研究)
 	- [指令](#指令)
 		- [播放](#播放)
@@ -291,7 +290,7 @@
 
 ## 原理
 
-### **可以参考**
+可以参考
 
 ### [装备遮罩（camera_overlay）的一点研究](https://vanillalibrary.mcfpp.top/datapack-index/resources/dust/2/2-%E8%A3%85%E5%A4%87%E9%81%AE%E7%BD%A9.html)
 
