@@ -2,6 +2,6 @@
   "pack": {
     "description": "A Video Play Datapack By WindWaves_Sea",
     "min_format": [94,1],
-    "max_format": 94
+    "max_format": 100
   }
 }

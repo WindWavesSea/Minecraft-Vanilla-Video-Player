@@ -24,8 +24,6 @@ $scoreboard players operation #page_number temp.dialog.video_list_play.player.$(
   
 #$tellraw @s [{score:{name:"#page_number",objective:"temp.dialog.video_list_play.player.$(number)"}}]
 
-$function animations:dialog/dialog/open_menu/2/operation1 {number:"$(number)"}
-
 $execute if score #b temp.dialog.video_list_play.player.$(number) matches 1.. run scoreboard players add #page_number temp.dialog.video_list_play.player.$(number) 1
 
 $execute store result storage video:player_number_$(number)_video_play dialog.video_list.page_number int 1 run scoreboard players get #page_number temp.dialog.video_list_play.player.$(number)
