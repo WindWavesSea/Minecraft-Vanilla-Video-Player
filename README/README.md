@@ -18,16 +18,16 @@
 		- [使用插帧播放60帧视频](#使用插帧播放60帧视频)
 	- [配置](#配置)
 		- [参数解析](#参数解析)
-			- [frame\_zero](#frame_zero)
+			- [frame_zero](#frame_zero)
 			- [frame](#frame)
 			- [path](#path)
 			- [name](#name)
 			- [blender](#blender)
-			- [blender\_name](#blender_name)
-			- [frame\_rate](#frame_rate)
+			- [blender_name](#blender_name)
+			- [frame_rate](#frame_rate)
 			- [sound](#sound)
-			- [sound\_switch](#sound_switch)
-			- [max\_frame](#max_frame)
+			- [sound_switch](#sound_switch)
+			- [max_frame](#max_frame)
 			- [slot](#slot)
 		- [示例](#示例)
 			- [视频播放配置](#视频播放配置)
@@ -35,7 +35,7 @@
 				- [资源包配置](#资源包配置)
 			- [sounds.json](#soundsjson)
 	- [原理](#原理)
-		- [装备遮罩（camera\_overlay）的一点研究](#装备遮罩camera_overlay的一点研究)
+		- [装备遮罩（camera_overlay）的一点研究](#装备遮罩camera_overlay的一点研究)
 	- [指令](#指令)
 		- [播放](#播放)
 			- [开始播放](#开始播放)
@@ -111,7 +111,7 @@
 
 #### frame_zero
 
-查看第一个图片的变化一般为全0，查看最后一个0前面有几个0，将这些0写到frame\_zero里，如video0000.png应该将000写如，
+查看第一个图片的变化一般为全0，查看最后一个0前面有几个0，将这些0写到frame_zero里，如video0000.png应该将000写如，
 如下
 
 ```{frame_zero:"000"}```
@@ -170,7 +170,7 @@
 
 用于**自定义帧率**, **只支持服务器**使用，服务器使用需要设置
 ```function-permission-level=3```
-如果**不是服务器也需要填写视频实际帧率用于自适应帧率**，如果服务器需要使用请**自行在start/start\_macros0开启$tick rate $(frame_rate)将井号删除即可**，**如果需要还原游戏刻请在stop里写上\$tick rate 20**
+如果**不是服务器也需要填写视频实际帧率用于自适应帧率**，如果服务器需要使用请**自行在start/start_macros0开启$tick rate $(frame_rate)将井号删除即可**，**如果需要还原游戏刻请在stop里写上\$tick rate 20**
 
 ***
 

@@ -12,7 +12,7 @@ scoreboard players get #reset.id.number video_list
 execute store result storage video:video_list reset.id.last_value int 1 run \
 scoreboard players get #reset.id.last_value video_list
 
-scoreboard players operation reset.id.execute video_list = #reset.id.max_value video_list
+scoreboard players operation reset.id.execute video_list = #reset.id.#max_value video_list
 
 scoreboard players operation reset.id.execute video_list -= #reset.id.number video_list
 

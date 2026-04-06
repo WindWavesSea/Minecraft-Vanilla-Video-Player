@@ -1,6 +1,6 @@
-$scoreboard players operation #a temp.dialog.video_list_play.player.$(number) = max_value video_list
+$scoreboard players operation #a temp.dialog.video_list_play.player.$(number) = #max_value video_list
 
-$scoreboard players operation max_value temp.dialog.video_list_play.player.$(number) = max_value video_list
+$scoreboard players operation #max_value temp.dialog.video_list_play.player.$(number) = #max_value video_list
 
 #$tellraw @s [{score:{name:"#a",objective:"temp.dialog.video_list_play.player.$(number)"}}]
 

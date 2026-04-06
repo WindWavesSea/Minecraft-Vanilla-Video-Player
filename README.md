@@ -2,6 +2,13 @@
 
 [English](README/README_en.md) [简体中文](README.md)
 > by 洛风澜_Sea(WindWaves_Sea)
+<<<<<<< HEAD
+=======
+
+>
+> 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库以及[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)
+
+>>>>>>> ba12c8bea0eeb0063773ffe43b964a028f0ebf55
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)以及此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库
 >
@@ -10,6 +17,7 @@
 ## 目录
 
 - [我的世界原版视频播放器](#我的世界原版视频播放器)
+- [\<\<\<\<\<\<\< HEAD](#-head)
   - [目录](#目录)
   - [序言](#序言)
     - [警告](#警告)
