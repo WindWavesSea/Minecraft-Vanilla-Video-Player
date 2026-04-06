@@ -76,6 +76,7 @@ Players need to select the video resolution:
 
 #### **Function Configuration**
 
+```
 data merge storage video:school \\  
 {video:\\  
 {frame\_zero:"000",\\  
@@ -103,9 +104,11 @@ zh-cn:"学校"\\
 }
 
 function animations:video\_add/main with storage video:school video
+```
 
 #### **sounds.json**
 
+```
 {  
   "video\_text": {  
     "sounds": \[  
@@ -117,6 +120,7 @@ function animations:video\_add/main with storage video:school video
     \]  
   }  
 }
+```
 
 ## **Mechanism**
 
