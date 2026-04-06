@@ -1,0 +1,216 @@
+{
+    "type": "notice",
+    "title": [
+        {"text": "\u0001","font": "dialog:space"},
+        {"translate": "windwaves_sea.dialog.language.text","font": "minecraft:default"}
+    ],
+    "can_close_with_escape": true,
+    "external_title": {"translate": "windwaves_sea.dialog.language.text"},
+    "after_action":"close",
+    "pause": true,
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 1"}
+            },{
+                "translate": "windwaves_sea.dialog.language.en-us",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 1"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 2"}
+            },{
+                "translate": "windwaves_sea.dialog.language.zh-cn",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 2"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 3"}
+            },{
+                "translate": "windwaves_sea.dialog.language.zh-hk",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 3"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 4"}
+            },{
+                "translate": "windwaves_sea.dialog.language.zh-mo",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 4"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 5"}
+            },{
+                "translate": "windwaves_sea.dialog.language.zh-sg",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 5"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 6"}
+            },{
+                "translate": "windwaves_sea.dialog.language.zh-tw",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 6"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 7"}
+            },{
+                "translate": "windwaves_sea.dialog.language.en-au",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 7"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 8"}
+            },{
+                "translate": "windwaves_sea.dialog.language.en-ca",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 8"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 9"}
+            },{
+                "translate": "windwaves_sea.dialog.language.en-in",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 9"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 10"}
+            },{
+                "translate": "windwaves_sea.dialog.language.en-gb",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 10"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 11"}
+            },{
+                "translate": "windwaves_sea.dialog.language.fr-fr",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 11"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 12"}
+            },{
+                "translate": "windwaves_sea.dialog.language.de-de",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 12"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 13"}
+            },{
+                "translate": "windwaves_sea.dialog.language.ja",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 13"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 14"}
+            },{
+                "translate": "windwaves_sea.dialog.language.kn",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 14"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 15"}
+            },{
+                "translate": "windwaves_sea.dialog.language.es-es",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 15"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 16"}
+            },{
+                "translate": "windwaves_sea.dialog.language.ar",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 16"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 17"}
+            },{
+                "translate": "windwaves_sea.dialog.language.ko",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 17"}
+            }]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [{
+                "text": "\u0001","font":"dialog:text_field",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 18"}
+            },{
+                "translate": "windwaves_sea.dialog.language.in-in",
+                "font":"minecraft:default",
+                "click_event": {"action": "run_command","command": "trigger windwaves_sea.dialog.language set 18"}
+            }]
+        }
+    ],
+    "action": {
+        "label": {"translate": "windwaves_sea.dialog.return"},
+        "tooltip": {"translate": "windwaves_sea.dialog.return.display"},
+        "width": 150
+    }
+}

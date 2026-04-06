@@ -1,0 +1,1 @@
+$scoreboard objectives remove temp.dialog.video_list_play.player.$(number)

@@ -1,0 +1,1 @@
+$scoreboard players set #tick temp.dialog.video_list_play.player.$(number) 1

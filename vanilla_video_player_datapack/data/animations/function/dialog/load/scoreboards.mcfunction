@@ -1,0 +1,10 @@
+scoreboard objectives add vvp.dialog.dialog_show trigger
+scoreboard objectives add vvp.dialog.dialog_init dummy
+scoreboard objectives add vvp.dialog.dialog_player_setting trigger
+scoreboard objectives add vvp.dialog.video_list.page_change trigger
+scoreboard objectives add vvp.dialog.video_list.page_number dummy
+scoreboard objectives add vvp.dialog.video_list.max_page_number dummy
+scoreboard objectives add vvp.dialog.video_list.return trigger
+scoreboard objectives add vvp.dialog.video.id trigger
+scoreboard objectives add vvp.dialog.video.id.run trigger
+scoreboard objectives add vvp.dialog.video_list.last_or_first_page trigger

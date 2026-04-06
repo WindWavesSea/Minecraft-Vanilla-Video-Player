@@ -1,0 +1,1 @@
+scoreboard players enable @s windwaves_sea.dialog.language

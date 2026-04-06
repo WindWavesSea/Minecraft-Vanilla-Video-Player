@@ -1,0 +1,14 @@
+scoreboard objectives remove video_frame_player
+scoreboard objectives remove video_frame
+#视频播放器总体设置
+scoreboard objectives remove video_setting
+scoreboard objectives remove video_play_execute
+scoreboard objectives remove video_player_pause
+scoreboard objectives remove video_frame_player_pause
+scoreboard objectives remove video_frame_player_pause1
+scoreboard objectives remove video_frame_player_pause2
+scoreboard objectives remove video_resolution_size
+scoreboard objectives remove video_setting_resolution_size
+function animations:player_video_play/reset/scoreboards
+
+function animations:video_add/reset/scoreboards

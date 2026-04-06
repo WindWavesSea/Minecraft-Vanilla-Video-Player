@@ -1,0 +1,1 @@
+$data remove storage video:player_number_$(number)_video_play video

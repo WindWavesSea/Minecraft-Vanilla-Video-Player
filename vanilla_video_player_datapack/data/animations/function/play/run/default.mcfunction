@@ -1,0 +1,82 @@
+$execute if data storage video:player_number_$(number)_video_play video{resolution:{switch:false}} run return run function animations:play/run/none/default with storage video:player_number_$(number)_video_play video
+
+$execute if score @s video_resolution_size matches 1 \
+if data storage \
+video:player_number_$(number)_video_play \
+video{\
+resolution:\
+{\
+switch:true,\
+size_list:\
+{\
+1:true\
+}\
+}\
+} \
+run return run \
+function animations:play/run/play/default/16_9 \
+with storage video:player_number_$(number)_video_play video
+
+
+
+$execute if score @s video_resolution_size matches 2 \
+if data storage \
+video:player_number_$(number)_video_play \
+video\
+{\
+resolution:\
+{\
+switch:true,\
+size_list:\
+{\
+2:true\
+}\
+}\
+} \
+run return run \
+function animations:play/run/play/default/16_10 \
+with storage video:player_number_$(number)_video_play video
+
+
+
+$execute if score @s video_resolution_size matches 3 \
+if data storage \ 
+video:player_number_$(number)_video_play \
+video\
+{\
+resolution:\
+{\
+switch:true,\
+size_list:\
+{\
+3:true\
+}\
+}\
+} \
+run return run \
+function animations:play/run/play/default/3_2 \
+with storage video:player_number_$(number)_video_play video
+
+
+$execute if score @s video_resolution_size matches 3 \
+if data storage video:player_number_$(number)_video_play \
+video\
+{\
+resolution:\
+{\
+switch:true,\
+size_list:\
+{\
+4:true\
+}\
+}\
+} \
+run return run \
+function animations:play/run/play/default/4_3 \
+with storage video:player_number_$(number)_video_play video
+
+
+$execute if data storage video:player_number_$(number)_video_play video{resolution:{switch:true,default_size:1}} run return run function animations:play/run/play/default/16_9 with storage video:player_number_$(number)_video_play video
+$execute if data storage video:player_number_$(number)_video_play video{resolution:{switch:true,default_size:2}} run return run function animations:play/run/play/default/16_10 with storage video:player_number_$(number)_video_play video
+$execute if data storage video:player_number_$(number)_video_play video{resolution:{switch:true,default_size:3}} run return run function animations:play/run/play/default/3_2 with storage video:player_number_$(number)_video_play video
+$execute if data storage video:player_number_$(number)_video_play video{resolution:{switch:true,default_size:4}} run return run function animations:play/run/play/default/4_3 with storage video:player_number_$(number)_video_play video

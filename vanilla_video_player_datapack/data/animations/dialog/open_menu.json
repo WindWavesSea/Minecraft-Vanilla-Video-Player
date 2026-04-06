@@ -1,0 +1,32 @@
+{
+    "type": "multi_action",
+    "title": [
+        {"text": "\u0001","font": "dialog:space"},
+        {"translate": "vanilla_video_player.dialog.open_menu.title","font": "minecraft:default"}
+    ],
+    "can_close_with_escape": true,
+    "external_title": {"translate": "vanilla_video_player.dialog.open_menu.title"},
+    "columns": 2,
+    "after_action":"none",
+    "pause": false,
+    "actions": [
+        {
+            "label": {"translate": "vanilla_video_player.dialog.open_menu.action.1.text"},
+            "tooltip": {"translate": "vanilla_video_player.dialog.open_menu.action.1.display"},
+            "width": 150,
+            "action": {
+                "type": "run_command",
+                "command": "trigger vvp.dialog.dialog_show set 1"
+            }
+        },
+                {
+            "label": {"translate": "vanilla_video_player.dialog.open_menu.action.2.text"},
+            "tooltip": {"translate": "vanilla_video_player.dialog.open_menu.action.2.display"},
+            "width": 150,
+            "action": {
+                "type": "run_command",
+                "command": "trigger vvp.dialog.dialog_show set 2"
+            }
+        }
+    ]
+}

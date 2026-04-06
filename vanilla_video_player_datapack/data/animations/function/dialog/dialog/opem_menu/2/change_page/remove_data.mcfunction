@@ -1,0 +1,1 @@
+$data remove storage video:dialog.change_page.$(player_number) change
