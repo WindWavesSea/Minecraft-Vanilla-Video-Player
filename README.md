@@ -3,12 +3,15 @@
 [English](README/README_en.md) [简体中文](README.md)
 > by 洛风澜_Sea(WindWaves_Sea)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库以及[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)
 
 >>>>>>> ba12c8bea0eeb0063773ffe43b964a028f0ebf55
+=======
+>>>>>>> 9acb0f27b5b9ef25a1e82d8dda09bf679e5349eb
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)以及此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库
 >
@@ -17,6 +20,7 @@
 ## 目录
 
 - [我的世界原版视频播放器](#我的世界原版视频播放器)
+<<<<<<< HEAD
 - [\<\<\<\<\<\<\< HEAD](#-head)
   - [目录](#目录)
   - [序言](#序言)
@@ -65,6 +69,56 @@
     - [如何导出序列图片](#如何导出序列图片)
     - [推荐尺寸](#推荐尺寸)
   - [注意事项](#注意事项)
+=======
+	- [目录](#目录)
+	- [序言](#序言)
+		- [警告](#警告)
+	- [下载](#下载)
+	- [视频要求](#视频要求)
+		- [使用加速游戏刻播放60帧视频](#使用加速游戏刻播放60帧视频)
+		- [使用插帧播放60帧视频](#使用插帧播放60帧视频)
+	- [对话框](#对话框)
+	- [配置](#配置)
+		- [参数解析](#参数解析)
+			- [frame\_zero](#frame_zero)
+			- [frame](#frame)
+			- [path](#path)
+			- [name](#name)
+			- [blender](#blender)
+			- [blender\_name](#blender_name)
+			- [frame\_rate](#frame_rate)
+			- [sound](#sound)
+			- [sound\_switch](#sound_switch)
+			- [max\_frame](#max_frame)
+			- [slot](#slot)
+			- [resolution](#resolution)
+				- [switch](#switch)
+				- [default\_size](#default_size)
+				- [size\_list](#size_list)
+			- [language](#language)
+				- [default\_language](#default_language)
+				- [语言翻译文本](#语言翻译文本)
+		- [示例](#示例)
+			- [视频播放配置](#视频播放配置)
+				- [Function](#function)
+				- [资源包配置](#资源包配置)
+			- [sounds.json](#soundsjson)
+	- [原理](#原理)
+	- [指令](#指令)
+		- [播放](#播放)
+			- [开始播放](#开始播放)
+		- [终止播放](#终止播放)
+		- [暂停播放](#暂停播放)
+		- [继续播放](#继续播放)
+		- [删除单个玩家的播放设置](#删除单个玩家的播放设置)
+		- [删除所有玩家的播放设置](#删除所有玩家的播放设置)
+		- [删除单一视频配置](#删除单一视频配置)
+		- [删除所有视频配置](#删除所有视频配置)
+	- [关于序列图片](#关于序列图片)
+		- [如何导出序列图片](#如何导出序列图片)
+		- [推荐尺寸](#推荐尺寸)
+	- [注意事项](#注意事项)
+>>>>>>> 9acb0f27b5b9ef25a1e82d8dda09bf679e5349eb
 
 ***
 
@@ -138,7 +192,10 @@
 2560*1080为16:10
 
 如果要使用**视频播放页面**请先在**语言设置**中选择语言
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9acb0f27b5b9ef25a1e82d8dda09bf679e5349eb
 
 ### 参数解析
 

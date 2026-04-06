@@ -13,9 +13,11 @@
 	- [目录](#目录)
 	- [序言](#序言)
 		- [警告](#警告)
+	- [下载](#下载)
 	- [视频要求](#视频要求)
 		- [使用加速游戏刻播放60帧视频](#使用加速游戏刻播放60帧视频)
 		- [使用插帧播放60帧视频](#使用插帧播放60帧视频)
+	- [对话框](#对话框)
 	- [配置](#配置)
 		- [参数解析](#参数解析)
 			- [frame_zero](#frame_zero)
@@ -29,13 +31,23 @@
 			- [sound_switch](#sound_switch)
 			- [max_frame](#max_frame)
 			- [slot](#slot)
+			- [resolution](#resolution)
+				- [switch](#switch)
+				- [default\_size](#default_size)
+				- [size\_list](#size_list)
+			- [language](#language)
+				- [default\_language](#default_language)
+				- [语言翻译文本](#语言翻译文本)
 		- [示例](#示例)
 			- [视频播放配置](#视频播放配置)
 				- [Function](#function)
 				- [资源包配置](#资源包配置)
 			- [sounds.json](#soundsjson)
 	- [原理](#原理)
+<<<<<<< HEAD
 		- [装备遮罩（camera_overlay）的一点研究](#装备遮罩camera_overlay的一点研究)
+=======
+>>>>>>> 9acb0f27b5b9ef25a1e82d8dda09bf679e5349eb
 	- [指令](#指令)
 		- [播放](#播放)
 			- [开始播放](#开始播放)
@@ -80,6 +92,12 @@
 
 ***
 
+## 下载
+
+可以前往[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)和[Github](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)下载此前置包
+
+***
+
 ## 视频要求
 
 需要为图片序列(.png格式）
@@ -105,7 +123,18 @@
 
 ***
 
-## 配置
+## 对话框
+
+可以使用快捷键G或者在游戏菜单打开
+
+视频播放必须使用**G键**或者使用**指令**打开
+```dialog show @s animations:open_menu```
+
+玩家需要选择视频尺寸
+1920*1080为16:9
+2560*1080为16:10
+
+如果要使用**视频播放页面**请先在**语言设置**中选择语言
 
 ### 参数解析
 
@@ -207,6 +236,74 @@
 详情可看[equippable:camera_overlay](https://zh.minecraft.wiki/w/%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6#equippable)
 ***
 
+#### resolution
+
+视频尺寸设置
+
+视频路径应为
+**path**填写的路径/视频尺寸/图片序列文件
+如
+```video:text_video/16:9/0001.png```
+
+##### switch
+
+是否开启多视频尺寸功能(必须要支持多视频尺寸才能开启)
+(true/false)
+
+##### default_size
+
+默认尺寸，填写数字代号即size_list的键名
+```default_size:1```
+
+##### size_list
+
+是否支持其中的视频尺寸(true/false)
+**注意!**
+**1**代表的是**16:9**
+**2**代表的是**16:10**
+**3**代表的是**3:2**
+**4**代表的是**4:3**
+**请勿随便开启选项**
+
+***
+
+#### language
+
+在dialog中视频名称显示的语言文字以及对应的翻译
+
+##### default_language
+
+默认语言，值为以下的键名
+    1:"en-us",
+    2:"zh-cn",
+    3:"zh-hk",
+    4:"zh-mo",
+    5:"zh-sg",
+    6:"zh-tw",
+    7:"en-au",
+    8:"en-ca",
+    9:"en-in",
+    10:"en-gb",
+    11:"fr-fr",
+    12:"de-de",
+    13:"ja",
+    14:"kn",
+    15:"es-es",
+    16:"ar",
+    17:"ko",
+    18:"in-in"
+
+键名后面对应的是支持的语言代码，和下文提到的语言代码相同
+
+##### 语言翻译文本
+
+应该在language列表中填写
+按照以下格式:
+**语言代码:"翻译文本"**
+例如:```en-us:"School"```
+
+***
+
 ### 示例
 
 #### 视频播放配置
@@ -215,22 +312,38 @@
 
 ```mcfunction
 
- data merge storage video:text \
- {\
- frame_zero:"000",\
- frame:"0",\
- path:"animation:school/",\
- name:"school",\
- blender_name:"",\
- frame_rate:"60",\
- sound:"",\
- sound_switch:false,\
- max_frame:740,\
- blender:true,\
- slot:"head"\
- }
+data merge storage video:school \
+{video:\
+{frame_zero:"000",\
+frame:"0",\
+path:"animation:school/",\
+name:"school",\
+blender_name:"",\
+frame_rate:"60",\
+sound:"",\
+sound_switch:false,\
+max_frame:740,\
+blender:true,\
+slot:"head",\
+resolution:{\
+switch:false,\
+default_size:1,\
+size_list:{\
+1:true,\
+2:false,\
+3:false,\
+4:false\
+}\
+},\
+language:{\
+default_language:"en-us",\
+en-us:"School",\
+zh-cn:"学校"\
+}\
+}\
+}
 
- function animations:video_add/main with storage video:school
+function animations:video_add/main with storage video:school video
 
 ```
 
@@ -245,20 +358,20 @@
  {
   "video_text":{
   "sounds":[
-    {
-     "name": "animation:video/video_text",
-     "stream": true,
-     "volume": 0.8,
-     "weight": 1
-    }
-    ]
-    },
-    "":{
-     "name": "",
-     "stream": true,
-     "volume": 0.8,
-     "weight": 1
-    }
+	{
+	 "name": "animation:video/video_text",
+	 "stream": true,
+	 "volume": 0.8,
+	 "weight": 1
+	}
+	]
+	},
+	"":{
+	 "name": "",
+	 "stream": true,
+	 "volume": 0.8,
+	 "weight": 1
+	}
  }
 
 ```
@@ -292,9 +405,9 @@
 
 可以参考
 
-### [装备遮罩（camera_overlay）的一点研究](https://vanillalibrary.mcfpp.top/datapack-index/resources/dust/2/2-%E8%A3%85%E5%A4%87%E9%81%AE%E7%BD%A9.html)
+[装备遮罩（camera_overlay）的一点研究](https://vanillalibrary.mcfpp.top/datapack-index/resources/dust/2/2-%E8%A3%85%E5%A4%87%E9%81%AE%E7%BD%A9.html)
 
-**By CR_019**
+By CR_019
 
 ***
 
