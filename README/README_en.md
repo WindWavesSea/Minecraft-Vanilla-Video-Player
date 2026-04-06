@@ -1,28 +1,10 @@
 # **Minecraft Vanilla Video Player**
 
-[English](http://docs.google.com/README_en.md) [简体中文](http://docs.google.com/README.md)
+[English](README_en.md) [简体中文](README.md)
 
 by WindWaves_Sea
 
 This article is also published on the author's [Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player), [Bilibili](https://www.bilibili.com/opus/1182083830058582057), and the [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/) repository.
-
-## **Table of Contents**
-
-* [Minecraft Vanilla Video Player](#bookmark=id.hzvlcust3sh)  
-  * [Preface](#bookmark=id.6za06afc2qr0)  
-    * [Warning](#bookmark=id.o5a9433oiwuu)  
-  * [Download](#bookmark=id.egolubecwiyv)  
-  * [Video Requirements](#bookmark=id.ik6wo5o5ztz0)  
-    * [Playing 60FPS Video with Tick Rate Acceleration](#bookmark=id.3j4hnuck8wb7)  
-    * [Playing 60FPS Video with Frame Interpolation](#bookmark=id.wjl1mp8ouqje)  
-  * [Dialog Box](#bookmark=id.jl76m45ophxm)  
-  * [Configuration](#bookmark=id.4eryvieva4fi)  
-    * [Parameter Analysis](#bookmark=id.n1fxeqxl824d)  
-    * [Examples](#bookmark=id.bzi31dszhyic)  
-  * [Mechanism](#bookmark=id.kcoqk6hry5uc)  
-  * [Commands](#bookmark=id.cvg2g9f031t1)  
-  * [About Image Sequences](#bookmark=id.6xj4gz2zjrgh)  
-  * [Notes & Known Issues](#bookmark=id.kay71ipqjjld)
 
 ## **Preface**
 
