@@ -76,50 +76,66 @@ Players need to select the video resolution:
 
 #### **Function Configuration**
 
-```
-data merge storage video:school \\  
-{video:\\  
-{frame\_zero:"000",\\  
-frame:"0",\\  
-path:"animation:school/",\\  
-name:"school",\\  
-blender\_name:"",\\  
-frame\_rate:"60",\\  
-sound:"",\\  
-sound\_switch:false,\\  
-max\_frame:740,\\  
-blender:true,\\  
-slot:"head",\\  
-resolution:{\\  
-switch:false,\\  
-default\_size:1,\\  
-size\_list:{1:true, 2:false, 3:false, 4:false}\\  
-},\\  
-language:{\\  
-default\_language:"en-us",\\  
-en-us:"School",\\  
-zh-cn:"学校"\\  
-}\\  
-}\\  
+```mcfunction
+
+data merge storage video:school \
+{video:\
+{frame_zero:"000",\
+frame:"0",\
+path:"animation:school/",\
+name:"school",\
+blender_name:"",\
+frame_rate:"60",\
+sound:"",\
+sound_switch:false,\
+max_frame:740,\
+blender:true,\
+slot:"head",\
+resolution:{\
+switch:false,\
+default_size:1,\
+size_list:{\
+1:true,\
+2:false,\
+3:false,\
+4:false\
+}\
+},\
+language:{\
+default_language:"en-us",\
+en-us:"School",\
+zh-cn:"学校"\
+}\
+}\
 }
 
-function animations:video\_add/main with storage video:school video
+function animations:video_add/main with storage video:school video
+
 ```
 
 #### **sounds.json**
 
-```
-{  
-  "video\_text": {  
-    "sounds": \[  
-      {  
-        "name": "animation:video/video\_text",  
-        "stream": true,  
-        "volume": 0.8  
-      }  
-    \]  
-  }  
-}
+```json
+
+ {
+  "video_text":{
+  "sounds":[
+	{
+	 "name": "animation:video/video_text",
+	 "stream": true,
+	 "volume": 0.8,
+	 "weight": 1
+	}
+	]
+	},
+	"":{
+	 "name": "",
+	 "stream": true,
+	 "volume": 0.8,
+	 "weight": 1
+	}
+ }
+
 ```
 
 ## **Mechanism**
