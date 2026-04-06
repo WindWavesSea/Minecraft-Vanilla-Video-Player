@@ -132,37 +132,6 @@
 
 如果要使用**视频播放页面**请先在**语言设置**中选择语言
 
-## 配置
-
-<div class="nbttree">
-
-<node type="compound" name="video_name"/> <br>这是data storage命名(一般与下文的name保持一致)
-
-- <node type="string" name="frame_zero" required=false /> <br>自动处理视频帧，默认不用填写，播放时自动根据帧数填写
-- <node type="int" name="frame" required=true /> <br>帧数 控制玩家目前播放的视频帧的物品
-- <node type="string" name="path" required=true /> <br>路径 指定序列图片在资源包纹理文件夹的位置
-- <node type="string" name="name" required=true /> <br>视频名称 匹配帧号前的名称
-- <node type="bool" name="blender" required=true /><br>使用blender输出的图片序列请开启此选项
-- <node type="string" name="blender_name" required=false /> <br>使用blender请留空
-- <node type="string" name="frame_rate" required=true /> <br>帧率 用于自定义帧率
-- <node type="string" name="sound" required=false /> <br>视频声音 需要开启sound_switch才能使用
-- <node type="bool" name="sound_switch" required=true /> <br>声音是否启用
-- <node type="string" name="max_frame" required=true /> <br>最大帧数
-- <node type="string" name="slot" required=true /> <br>设置物品穿戴在哪时启用遮罩<br>此值应为:head,body,chest,feet,legs,mainhand,offhand,saddle其中之一
-- <node type="compound" name="resolution" required=true /> <br>视频尺寸
-- - <node type="bool" name="switch" required=true /> <br>是否开启此功能
-- - <node type="bool" name="default_size" required=true /> <br>默认视频尺寸
-- - <node type="compound" name="size_list" required=true /> <br>是否启用一下尺寸
-- - - <node type="bool" name="1" required=true /> <br>是否支持16:9的播放尺寸
-- - - <node type="bool" name="2" required=true /> <br>是否支持16:10的播放尺寸
-- - - <node type="bool" name="1" required=true /> <br>是否支持3:2的播放尺寸
-- - - <node type="bool" name="1" required=true /> <br>是否支持4:3的播放尺寸
-- <node type="compound" name="language" required=true /> <br>视频名称显示语言
-- - <node type="string" name="default_language" required=true /> <br>默认显示语言(填写语言代码)
-- - <node type="string" name="zh-cn" required=true /> 填写翻译文本，其它语言也相同
-
-</div>
-
 ### 参数解析
 
 #### frame_zero
