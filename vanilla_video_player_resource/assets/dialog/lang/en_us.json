@@ -1,0 +1,21 @@
+{
+    "windwaves_sea.dialog.language.text":"Language Setting",
+    "windwaves_sea.dialog.language.en-us":"English (US)",
+    "windwaves_sea.dialog.language.zh-cn":"简体中文 (中国大陆)",
+    "windwaves_sea.dialog.language.zh-hk":"繁體中文 (香港特別行政區)",
+    "windwaves_sea.dialog.language.zh-mo":"繁體中文 (澳門特別行政區)",
+    "windwaves_sea.dialog.language.zh-sg":"繁體中文 (新加坡)",
+    "windwaves_sea.dialog.language.zh-tw":"繁體中文 (臺灣省)",
+    "windwaves_sea.dialog.language.en-au":"English (Australia)",
+    "windwaves_sea.dialog.language.en-ca":"English (Canada)",
+    "windwaves_sea.dialog.language.en-in":"English (India)",
+    "windwaves_sea.dialog.language.en-gb":"English (Great Britain)",
+    "windwaves_sea.dialog.language.fr-fr":"Français (France)",
+    "windwaves_sea.dialog.language.de-de":"Deutsch (Deutschland)",
+    "windwaves_sea.dialog.language.ja":"日本語",
+    "windwaves_sea.dialog.language.kn":"ಕನ್ನಡ",
+    "windwaves_sea.dialog.language.es-es":"Español-España (Tradicional)",
+    "windwaves_sea.dialog.language.ar":"العربية",
+    "windwaves_sea.dialog.language.ko":"한국어",
+    "windwaves_sea.dialog.language.in-in":"Italia"
+}

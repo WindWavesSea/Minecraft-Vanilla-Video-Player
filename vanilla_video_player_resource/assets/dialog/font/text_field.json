@@ -1,0 +1,11 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "dialog:text_field.png",
+            "chars": ["\u0001"],
+            "ascent": 10,
+            "height": 36
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "vanilla_video_player.dialog.open_menu.title":"原版视频播放器设置界面",
+    "vanilla_video_player.dialog.open_menu.action.1.text":"玩家播放设置",
+    "vanilla_video_player.dialog.open_menu.action.1.display":"点击配置视频播放",
+    "vanilla_video_player.dialog.open_menu.action.2.text":"播放视频",
+    "vanilla_video_player.dialog.open_menu.action.2.display":"点击选择视频播放",
+    "vanilla_video_player.dialog.player_setting.text.1":"视频尺寸:%s",
+    "vanilla_video_player.dialog.player_setting.text.1.display":"切换视频尺寸，让视频符合你的屏幕尺寸",
+    "vanilla_video_player.dialog.video_list.title":"视频列表(点击播放)",
+    "vanilla_video_player.dialog.video_list.action.next_page.label":"下一页",
+    "vanilla_video_player.dialog.video_list.action.next_page.tooltip":"点击前往下一页",
+    "vanilla_video_player.dialog.video_list.action.last_page.label":"上一页",
+    "vanilla_video_player.dialog.video_list.action.last_page.tooltip":"点击前往上一页",
+    "vanilla_video_player.dialog.video_play.title":"播放视频",
+    "vanilla_video_player.dialog.video_play.text":"你确定要此播放视频吗?",
+    "vanilla_video_player.dialog.video_play.action.yes.label":"确认播放",
+    "vanilla_video_player.dialog.video_play.action.yes.tooltip":"点击播放视频",
+    "vanilla_video_player.dialog.video_play.action.no.label":"取消播放",
+    "vanilla_video_player.dialog.video_play.action.no.tooltip":"点击返回视频播放界面",
+    "vanilla_video_player.dialog.video_list.text.no":"这里什么也没有...快去配置一个视频吧~",
+    "vanilla_video_player.dialog.video_list.page_change_next_no":"这是最后一页了...",
+    "vanilla_video_player.dialog.video_list.page_change_last_no":"这是第一页了..."
+}

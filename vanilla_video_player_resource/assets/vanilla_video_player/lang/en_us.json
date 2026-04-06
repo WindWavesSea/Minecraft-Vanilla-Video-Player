@@ -1,0 +1,23 @@
+{
+    "vanilla_video_player.dialog.open_menu.title": "Vanilla Video Player Settings",
+    "vanilla_video_player.dialog.open_menu.action.1.text": "Playback Settings",
+    "vanilla_video_player.dialog.open_menu.action.1.display": "Click to configure video playback",
+    "vanilla_video_player.dialog.open_menu.action.2.text": "Play Video",
+    "vanilla_video_player.dialog.open_menu.action.2.display": "Click to select a video to play",
+    "vanilla_video_player.dialog.player_setting.text.1": "Video Size: %s",
+    "vanilla_video_player.dialog.player_setting.text.1.display": "Toggle video size to fit your screen",
+    "vanilla_video_player.dialog.video_list.title": "Video List (Click to play)",
+    "vanilla_video_player.dialog.video_list.action.next_page.label": "Next Page",
+    "vanilla_video_player.dialog.video_list.action.next_page.tooltip": "Click to go to the next page",
+    "vanilla_video_player.dialog.video_list.action.last_page.label": "Previous Page",
+    "vanilla_video_player.dialog.video_list.action.last_page.tooltip": "Click to go to the previous page",
+    "vanilla_video_player.dialog.video_play.title": "Play Video",
+    "vanilla_video_player.dialog.video_play.text": "Are you sure you want to play this video?",
+    "vanilla_video_player.dialog.video_play.action.yes.label": "Confirm",
+    "vanilla_video_player.dialog.video_play.action.yes.tooltip": "Click to start playback",
+    "vanilla_video_player.dialog.video_play.action.no.label": "Cancel",
+    "vanilla_video_player.dialog.video_play.action.no.tooltip": "Click to return to the video selection screen",
+    "vanilla_video_player.dialog.video_list.text.no": "There's nothing here... Go configure a video!",
+    "vanilla_video_player.dialog.video_list.page_change_next_no": "This is the last page...",
+    "vanilla_video_player.dialog.video_list.page_change_last_no": "This is the first page..."
+}
