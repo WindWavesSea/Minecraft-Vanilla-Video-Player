@@ -6,7 +6,7 @@
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库以及[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)
 =======
->>>>>>> f29a03835e197e8273f6bc47b2a0d8a6c29b04bd
+
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)以及此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库
 >
