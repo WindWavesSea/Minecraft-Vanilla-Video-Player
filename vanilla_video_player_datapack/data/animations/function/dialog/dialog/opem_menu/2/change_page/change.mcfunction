@@ -1,3 +1,0 @@
-$data modify storage video:player_number_$(player_number)_video_play dialog.video_list.page_body set from storage video:player_number_$(player_number)_video_play dialog.video_list.page.$(page_number)
-$function animations:dialog/dialog/opem_menu/2/page_show with storage video:player_number_$(player_number)_video_play dialog.video_list
-$data remove storage video:player_number_$(player_number)_video_play dialog.video_list.page_body

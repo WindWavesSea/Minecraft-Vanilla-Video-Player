@@ -1,0 +1,2 @@
+execute if score @s vvp.dialog.video_list.last_or_first_page matches 1 run function animations:dialog/dialog/open_menu/2/change_page/last_page/tick_run
+execute if score @s vvp.dialog.video_list.last_or_first_page matches 2 run function animations:dialog/dialog/open_menu/2/change_page/first_page/tick_run
