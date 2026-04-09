@@ -19,6 +19,6 @@ $execute store result storage video:$(name) video.id int 1 run scoreboard player
 
 execute store result score #max_value video_list run scoreboard players get #end video_list
 
-execute store result storage video:temp_add_video #max_value int 1 run scoreboard players get #end video_list
+execute store result storage video:temp_add_video max_value int 1 run scoreboard players get #end video_list
 
 scoreboard players reset #end video_list
