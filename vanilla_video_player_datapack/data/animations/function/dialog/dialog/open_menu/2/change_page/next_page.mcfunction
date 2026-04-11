@@ -1,13 +1,10 @@
-scoreboard players reset @s vvp.dialog.video_list.page_change
-scoreboard players enable @s vvp.dialog.video_list.page_change
+#execute if score @s vvp.dialog.video_list.page_number < @s vvp.dialog.video_list.max_page_number run say can_next_page
 
-execute store result storage video:dialog temp_change_page.player_number int 1 run scoreboard players get @s video_uuid_storages
+execute if score @s vvp.dialog.video_list.page_number < @s vvp.dialog.video_list.max_page_number run return run function animations:dialog/dialog/open_menu/2/page_get/main
 
-function animations:dialog/dialog/open_menu/2/change_page/get_data with storage video:dialog temp_change_page
-
-execute if score @s vvp.dialog.video_list.page_number < @s vvp.dialog.video_list.max_page_number run function animations:dialog/dialog/open_menu/2/change_page/next_change with storage video:dialog temp_change_page
 execute if score @s vvp.dialog.video_list.page_number = @s vvp.dialog.video_list.max_page_number run function animations:dialog/dialog/open_menu/2/change_page/last_page/show_page
 
-function animations:dialog/dialog/open_menu/2/change_page/remove_data with storage video:dialog temp_change_page
+#say next_page
 
-data remove storage video:dialog temp_change_page
+scoreboard players reset @s vvp.dialog.video_list.page_change
+scoreboard players enable @s vvp.dialog.video_list.page_change

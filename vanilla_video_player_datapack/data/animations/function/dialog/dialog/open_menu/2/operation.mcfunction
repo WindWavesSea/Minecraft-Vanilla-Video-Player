@@ -4,7 +4,7 @@ $scoreboard players operation #max_value temp.dialog.video_list_play.player.$(nu
 
 #$tellraw @s [{score:{name:"#a",objective:"temp.dialog.video_list_play.player.$(number)"}}]
 
-$scoreboard players set #d temp.dialog.video_list_play.player.$(number) 20
+$scoreboard players set #d temp.dialog.video_list_play.player.$(number) 5
 
 #$tellraw @s [{score:{name:"#d",objective:"temp.dialog.video_list_play.player.$(number)"}}]
 

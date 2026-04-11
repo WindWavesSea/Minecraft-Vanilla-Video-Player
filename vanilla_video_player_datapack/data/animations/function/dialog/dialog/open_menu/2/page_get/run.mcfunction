@@ -1,0 +1,1 @@
+$scoreboard players set #tick temp.dialog.get_page.player.$(player_number) 1

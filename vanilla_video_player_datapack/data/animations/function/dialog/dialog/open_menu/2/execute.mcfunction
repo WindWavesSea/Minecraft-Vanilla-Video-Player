@@ -1,1 +1,0 @@
-data get storage video:dialog video_list_play.temp.number

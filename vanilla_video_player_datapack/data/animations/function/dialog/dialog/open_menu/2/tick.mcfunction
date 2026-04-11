@@ -1,8 +1,8 @@
-execute store result storage video:dialog video_list_play.temp.number int 1 run scoreboard players get @s video_uuid_storages
+execute store result storage video:dialog get_page.temp.tick.player_number int 1 run scoreboard players get @s video_uuid_storages
 
-function animations:dialog/dialog/open_menu/2/tick2 with storage video:dialog video_list_play.temp
+function animations:dialog/dialog/open_menu/2/tick0 with storage video:dialog get_page.temp.tick
 
-data remove storage video:dialog video_list_play.temp.number
+data remove storage video:dialog get_page.temp.tick.player_number
 
 scoreboard players enable @s vvp.dialog.video.id
 scoreboard players enable @s vvp.dialog.video.id.run

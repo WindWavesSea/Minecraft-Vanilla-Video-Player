@@ -7,3 +7,6 @@ function animations:dialog/dialog/open_menu/2/clear_page/clear with storage vide
 data remove storage video:dialog temp
 
 dialog show @s animations:open_menu
+
+scoreboard players reset @s vvp.dialog.video_list.page_number
+scoreboard players reset @s vvp.dialog.video_list.max_page_number

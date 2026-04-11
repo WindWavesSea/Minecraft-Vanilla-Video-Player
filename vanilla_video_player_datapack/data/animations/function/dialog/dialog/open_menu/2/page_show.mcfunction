@@ -8,7 +8,7 @@ $dialog show @s {\
     "can_close_with_escape": false,\
     "columns": 2,\
     "after_action": "none",\
-    "body": $(page_body),\
+    "body": $(body),\
     "actions": [\
         {\
             "label": {"translate": "vanilla_video_player.dialog.video_list.action.last_page.label"},\
