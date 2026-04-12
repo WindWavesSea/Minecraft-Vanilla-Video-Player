@@ -2,16 +2,8 @@
 
 [English](README/README_en.md) [简体中文](README.md)
 > by 洛风澜_Sea(WindWaves_Sea)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库以及[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)
-
->>>>>>> ba12c8bea0eeb0063773ffe43b964a028f0ebf55
-=======
->>>>>>> 9acb0f27b5b9ef25a1e82d8dda09bf679e5349eb
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)以及此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库
 >
@@ -192,10 +184,6 @@
 2560*1080为16:10
 
 如果要使用**视频播放页面**请先在**语言设置**中选择语言
-<<<<<<< HEAD
-
-=======
->>>>>>> 9acb0f27b5b9ef25a1e82d8dda09bf679e5349eb
 
 ### 参数解析
 
@@ -335,6 +323,7 @@
 ##### default_language
 
 默认语言，值为以下的键名
+```
     1:"en-us",
     2:"zh-cn",
     3:"zh-hk",
@@ -353,6 +342,7 @@
     16:"ar",
     17:"ko",
     18:"in-in"
+```
 
 键名后面对应的是支持的语言代码，和下文提到的语言代码相同
 
