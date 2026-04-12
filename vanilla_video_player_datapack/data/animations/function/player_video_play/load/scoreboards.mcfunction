@@ -1,8 +1,5 @@
 scoreboard objectives add video_uuid_storages dummy
 
-#重置video_uuid_storages计分板
-scoreboard players reset * video_uuid_storages
-
 #上次玩家数值存储(用于唯一性计分板数值)
 scoreboard players set #number video_uuid_storages 0
 

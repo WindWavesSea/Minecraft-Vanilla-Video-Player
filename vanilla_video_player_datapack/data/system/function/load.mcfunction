@@ -1,4 +1,5 @@
 function dialog:load
 
-function system:load/scoreboards
-function system:load/storages
+function animations:load0
+
+scoreboard players set #load video_setting 1

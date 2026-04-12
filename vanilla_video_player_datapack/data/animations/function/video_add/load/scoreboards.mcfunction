@@ -1,8 +1,5 @@
 scoreboard objectives add video_list dummy
 
-#重置video_list计分板
-scoreboard players reset * video_list
-
 #上次玩家数值存储(用于唯一性计分板数值)
 scoreboard players set #number video_list 0
 

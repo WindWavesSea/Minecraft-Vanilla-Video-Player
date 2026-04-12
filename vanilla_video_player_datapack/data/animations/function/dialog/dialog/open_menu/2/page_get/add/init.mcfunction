@@ -2,17 +2,17 @@ $scoreboard objectives add temp.dialog.get_page.player.$(player_number) dummy
 
 $scoreboard players operation #main.max_video_id temp.dialog.get_page.player.$(player_number) = #max_value video_list
 
-#$tellraw @s [{text:"#main.max_video_id"},{text:" : "},{score:{name:"#main.max_video_id",objective:"temp.dialog.get_page.player.$(player_number)"}}]
+$execute if score #debug video_setting matches 3 run tellraw @s [{text:"#main.max_video_id"},{text:" : "},{score:{name:"#main.max_video_id",objective:"temp.dialog.get_page.player.$(player_number)"}}]
 
 $scoreboard players operation #max_page_number temp.dialog.get_page.player.$(player_number) = @s vvp.dialog.video_list.max_page_number
 
-#$tellraw @s [{text:"#max_page_number"},{text:" : "},{score:{name:"#max_page_number",objective:"temp.dialog.get_page.player.$(player_number)"}}]
+$execute if score #debug video_setting matches 3 run tellraw @s [{text:"#max_page_number"},{text:" : "},{score:{name:"#max_page_number",objective:"temp.dialog.get_page.player.$(player_number)"}}]
 
 $scoreboard players operation #page_number temp.dialog.get_page.player.$(player_number) = @s vvp.dialog.video_list.page_number
 
-#$tellraw @s [{text:"#page_number"},{text:" : "},{score:{name:"#page_number",objective:"temp.dialog.get_page.player.$(player_number)"}}]
+$execute if score #debug video_setting matches 3 run tellraw @s [{text:"#page_number"},{text:" : "},{score:{name:"#page_number",objective:"temp.dialog.get_page.player.$(player_number)"}}]
 
-#say init
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"init.get_page"}]
 
 #更改页面需要获取的数据
 $execute if data storage video:dialog.get_page.$(player_number) {get_data:{change_page:1}} \

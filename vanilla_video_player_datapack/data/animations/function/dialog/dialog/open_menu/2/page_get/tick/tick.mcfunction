@@ -1,4 +1,11 @@
-#say tick
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"---------------page_get_tick-----------------"}]
+
+#$execute \
+if data storage video:dialog.get_page.$(player_number) {get_data:{change_page:2}} \
+if score \
+#video_id temp.dialog.get_page.player.$(player_number) \
+< \
+#max_video_id temp.dialog.get_page.player.$(player_number) run say tick
 
 $execute \
 if data storage video:dialog.get_page.$(player_number) {get_data:{change_page:2}} \
@@ -18,4 +25,4 @@ function animations:dialog/dialog/open_menu/2/page_get/add/add_video_list with s
 
 $function animations:dialog/dialog/open_menu/2/page_get/tick/end {player_number:$(player_number)}
 
-#say tick end
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"---------------page_get_tick_end-----------------"}]

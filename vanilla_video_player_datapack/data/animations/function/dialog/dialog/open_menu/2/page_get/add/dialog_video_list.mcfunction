@@ -20,4 +20,4 @@ $function animations:dialog/dialog/open_menu/2/page_get/add/player_dialog with s
 
 $data remove storage video:dialog.get_page.$(player_number) get_data.video_body
 
-#say add.dialog_video_list
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"add.dialog_video_list"}]

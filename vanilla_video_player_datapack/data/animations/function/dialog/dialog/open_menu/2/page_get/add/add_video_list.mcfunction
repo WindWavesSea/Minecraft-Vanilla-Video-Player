@@ -1,4 +1,4 @@
-#say add_video_list
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"add_video_list"}]
 
 $execute if data storage video:dialog.get_page.$(player_number) {get_data:{change_page:1}} run \
 scoreboard players remove #video_id temp.dialog.get_page.player.$(player_number) 1
@@ -16,6 +16,6 @@ $function animations:dialog/dialog/open_menu/2/video_get/get with storage video:
 #写入到dialog当中
 $function animations:dialog/dialog/open_menu/2/page_get/add/dialog_video_list with storage video:dialog.get_page.$(player_number) get_data
 
-#$data remove storage video:dialog.get_page.$(player_number) get_data.video_id
-#$data remove storage video:dialog.get_page.$(player_number) get_data.video_name
-#$data remove storage video:dialog.get_page.$(player_number) get_data.video_name_text
+$data remove storage video:dialog.get_page.$(player_number) get_data.video_id
+$data remove storage video:dialog.get_page.$(player_number) get_data.video_name
+$data remove storage video:dialog.get_page.$(player_number) get_data.video_name_text

@@ -12,3 +12,5 @@ scoreboard objectives remove video_setting_resolution_size
 function animations:player_video_play/reset/scoreboards
 
 function animations:video_add/reset/scoreboards
+
+function animations:dialog/reset/scoreboards

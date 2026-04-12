@@ -1,14 +1,12 @@
 #建立临时运算计分板
 scoreboard players set @s vvp.dialog.dialog_show 0
-#say start
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"------------------------start-------------------------"}]
 
 execute store result storage video:dialog_run video_list_play.temp.number int 1 run scoreboard players get @s video_uuid_storages
 
 function animations:dialog/dialog/open_menu/2/add_temp_scoreboard with storage video:dialog_run video_list_play.temp
 
 scoreboard players set @s vvp.dialog.video_list.page_change 2
-
-#say start
 
 scoreboard players set @s vvp.dialog.video_list.page_number 0
 

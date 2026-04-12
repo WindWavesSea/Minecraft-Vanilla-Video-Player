@@ -19,13 +19,22 @@
                 "command": "trigger vvp.dialog.dialog_show set 1"
             }
         },
-                {
+        {
             "label": {"translate": "vanilla_video_player.dialog.open_menu.action.2.text"},
             "tooltip": {"translate": "vanilla_video_player.dialog.open_menu.action.2.display"},
             "width": 150,
             "action": {
                 "type": "run_command",
                 "command": "trigger vvp.dialog.dialog_show set 2"
+            }
+        },
+        {
+            "label": {"translate": "vanilla_video_player.dialog.open_menu.action.3.text","color": "red"},
+            "tooltip": {"translate": "vanilla_video_player.dialog.open_menu.action.3.display"},
+            "width": 150,
+            "action": {
+                "type": "run_command",
+                "command": "trigger vvp.dialog.dialog_show set 3"
             }
         }
     ]

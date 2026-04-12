@@ -11,4 +11,4 @@ function animations:dialog/dialog/open_menu/2/change_page/last_page/remove_data 
 
 data remove storage video:dialog temp_last_page
 
-#say tick_run
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"last_page.tick_run"}]

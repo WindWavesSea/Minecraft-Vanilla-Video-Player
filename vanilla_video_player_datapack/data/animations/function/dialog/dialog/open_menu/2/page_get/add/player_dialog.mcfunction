@@ -6,4 +6,4 @@ $execute if data storage video:dialog.get_page.$(player_number) {get_data:{chang
 dialog.video_list.page.body \
 prepend from storage video:dialog.get_page.$(player_number) get_data.video_body
 
-#say add_page.player_dialog_add
+execute if score #debug video_setting matches 3 run tellraw @s add_page.player_dialog_add

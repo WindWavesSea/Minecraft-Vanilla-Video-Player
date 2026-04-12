@@ -4,7 +4,7 @@ execute if score @s vvp.dialog.video_list.page_number < @s vvp.dialog.video_list
 
 execute if score @s vvp.dialog.video_list.page_number = @s vvp.dialog.video_list.max_page_number run function animations:dialog/dialog/open_menu/2/change_page/last_page/show_page
 
-#say next_page
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"next_page"}]
 
 scoreboard players reset @s vvp.dialog.video_list.page_change
 scoreboard players enable @s vvp.dialog.video_list.page_change
