@@ -1,3 +1,4 @@
-execute unless score #load video_setting matches 1 unless score #load video_setting matches 2 run return run function system:load
+execute unless function animations:execute_run/if_function/scoreboard run \
+return run function animations:load
 
 execute if score #load video_setting matches 2 run function animations:reload
