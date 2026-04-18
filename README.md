@@ -33,7 +33,7 @@
       - [max\_frame](#max_frame)
       - [slot](#slot)
       - [dialog](#dialog)
-      	- [video\_\list_\show](video_list_show)
+      	- [video\_list_show](video_list_show)
       - [resolution](#resolution)
         - [switch](#switch)
         - [default\_size](#default_size)
