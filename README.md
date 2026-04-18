@@ -32,6 +32,8 @@
       - [sound\_switch](#sound_switch)
       - [max\_frame](#max_frame)
       - [slot](#slot)
+      - [dialog](#dialog)
+      	- [video\_\list_\show](video_list_show)
       - [resolution](#resolution)
         - [switch](#switch)
         - [default\_size](#default_size)
@@ -60,57 +62,7 @@
     - [推荐尺寸](#推荐尺寸)
   - [注意事项](#注意事项)
 =======
-	- [目录](#目录)
-	- [序言](#序言)
-		- [警告](#警告)
-	- [下载](#下载)
-	- [视频要求](#视频要求)
-		- [使用加速游戏刻播放60帧视频](#使用加速游戏刻播放60帧视频)
-		- [使用插帧播放60帧视频](#使用插帧播放60帧视频)
-	- [对话框](#对话框)
-	- [配置](#配置)
-		- [参数解析](#参数解析)
-			- [frame\_zero](#frame_zero)
-			- [frame](#frame)
-			- [path](#path)
-			- [name](#name)
-			- [blender](#blender)
-			- [blender\_name](#blender_name)
-			- [frame\_rate](#frame_rate)
-			- [sound](#sound)
-			- [sound\_switch](#sound_switch)
-			- [max\_frame](#max_frame)
-			- [slot](#slot)
-			- [resolution](#resolution)
-				- [switch](#switch)
-				- [default\_size](#default_size)
-				- [size\_list](#size_list)
-			- [language](#language)
-				- [default\_language](#default_language)
-				- [语言翻译文本](#语言翻译文本)
-		- [示例](#示例)
-			- [视频播放配置](#视频播放配置)
-				- [Function](#function)
-				- [资源包配置](#资源包配置)
-			- [sounds.json](#soundsjson)
-	- [原理](#原理)
-	- [指令](#指令)
-		- [播放](#播放)
-			- [开始播放](#开始播放)
-		- [终止播放](#终止播放)
-		- [暂停播放](#暂停播放)
-		- [继续播放](#继续播放)
-		- [删除单个玩家的播放设置](#删除单个玩家的播放设置)
-		- [删除所有玩家的播放设置](#删除所有玩家的播放设置)
-		- [删除单一视频配置](#删除单一视频配置)
-		- [删除所有视频配置](#删除所有视频配置)
-	- [关于序列图片](#关于序列图片)
-		- [如何导出序列图片](#如何导出序列图片)
-		- [推荐尺寸](#推荐尺寸)
-	- [注意事项](#注意事项)
->>>>>>> 9acb0f27b5b9ef25a1e82d8dda09bf679e5349eb
 
-***
 
 ## 序言
 
@@ -283,6 +235,14 @@
 详情可看[equippable:camera_overlay](https://zh.minecraft.wiki/w/%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6#equippable)
 ***
 
+#### dialog
+关于对话框的配置项
+##### video_list_show
+非必填项
+
+是否需要在视频列表中显示此视频(true)
+```{video_list_show:true}```
+
 #### resolution
 
 视频尺寸设置
@@ -374,6 +334,9 @@ sound_switch:false,\
 max_frame:740,\
 blender:true,\
 slot:"head",\
+dialog:{\
+    video_list_show:true\
+},\
 resolution:{\
 switch:false,\
 default_size:1,\
