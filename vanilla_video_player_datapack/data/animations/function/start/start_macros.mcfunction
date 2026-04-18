@@ -11,5 +11,3 @@ scoreboard players set @s video_play_execute 1
 
 data remove storage video:temp_player_number_get number
 data remove storage video:temp_player_number_get video_name
-
-advancement revoke @s only advancements:advancements

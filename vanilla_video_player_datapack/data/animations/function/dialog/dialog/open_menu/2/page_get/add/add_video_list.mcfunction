@@ -14,6 +14,9 @@ $execute store result storage video:dialog.get_page.$(player_number) get_data.vi
 $function animations:dialog/dialog/open_menu/2/video_get/get with storage video:dialog.get_page.$(player_number) get_data
 #获取视频列表显示状态
 
+$function animations:dialog/dialog/open_menu/2/video_get/get_id with storage video:dialog.get_page.$(player_number) get_data
+#获取视频列表显示状态
+
 #写入到dialog当中
 $function animations:dialog/dialog/open_menu/2/page_get/add/dialog_video_list \
 with storage video:dialog.get_page.$(player_number) get_data
