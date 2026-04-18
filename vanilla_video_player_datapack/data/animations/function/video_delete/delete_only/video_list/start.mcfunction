@@ -16,10 +16,10 @@ scoreboard players operation reset.id.execute video_list = #reset.id.#max_value 
 
 scoreboard players operation reset.id.execute video_list -= #reset.id.number video_list
 
-function animations:video_delete/delete_only/end with storage video:video_list reset.id
+function animations:video_delete/delete_only/video_list/end with storage video:video_list reset.id
 
 execute if score reset.id.execute video_list matches 1 run \
-function animations:video_delete/delete_only/delete_last with storage video:video_list reset.id
+function animations:video_delete/delete_only/video_list/delete_last with storage video:video_list reset.id
 
 scoreboard players operation #reset.id.last_value video_list = #reset.id.number video_list
 

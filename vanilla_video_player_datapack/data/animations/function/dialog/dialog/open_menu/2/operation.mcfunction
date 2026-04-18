@@ -1,6 +1,6 @@
-$scoreboard players operation #a temp.dialog.video_list_play.player.$(number) = #max_value video_list
+$scoreboard players operation #a temp.dialog.video_list_play.player.$(number) = #max_value video_dialog_show_list
 
-$scoreboard players operation #max_value temp.dialog.video_list_play.player.$(number) = #max_value video_list
+$scoreboard players operation #max_value temp.dialog.video_list_play.player.$(number) = #max_value video_dialog_show_list
 
 $execute if score #debug video_setting matches 3 run tellraw @s [{text:"#a: "},{score:{name:"#a",objective:"temp.dialog.video_list_play.player.$(number)"}}]
 

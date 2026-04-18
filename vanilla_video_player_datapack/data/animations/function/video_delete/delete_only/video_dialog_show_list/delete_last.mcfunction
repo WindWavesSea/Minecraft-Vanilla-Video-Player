@@ -1,0 +1,1 @@
+$data remove storage video:video_dialog_show_list $(last_value)

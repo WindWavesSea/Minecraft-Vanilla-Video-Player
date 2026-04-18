@@ -8,5 +8,5 @@ $data modify storage video:dialog.get_page.$(player_number) get_data.player_lang
 $function animations:dialog/dialog/open_menu/2/video_get/get_name \
 with storage video:dialog.get_page.$(player_number) get_data
 
-execute if score #debug video_setting matches 3 run tellraw @s [{text:"language_get"}]
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"get0"}]
 

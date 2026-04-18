@@ -1,1 +1,2 @@
-execute if score #reset.id.tick_run video_list matches 1 run function animations:video_delete/delete_only/run
+execute if score #reset.id.tick_run video_list matches 1 run function animations:video_delete/delete_only/video_list/run
+execute if score #reset.id.tick_run video_dialog_show_list matches 1 run function animations:video_delete/delete_only/video_dialog_show_list/run

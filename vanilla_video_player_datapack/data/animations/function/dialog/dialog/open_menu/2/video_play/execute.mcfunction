@@ -1,5 +1,7 @@
 execute store result storage video:dialog_video_show video_id int 1 run scoreboard players get @s vvp.dialog.video.id.run
 
+function animations:dialog/dialog/open_menu/2/clear_page0/main
+
 scoreboard players reset @s vvp.dialog.video.id.run
 scoreboard players enable @s vvp.dialog.video.id.run
 

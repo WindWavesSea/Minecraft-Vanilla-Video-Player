@@ -1,1 +1,1 @@
-$data modify storage video:dialog_video_show video_name set from storage video:video_list $(video_id)
+$data modify storage video:dialog_video_show video_name set from storage video:video_dialog_show_list $(video_id)

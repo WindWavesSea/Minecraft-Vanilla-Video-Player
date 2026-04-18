@@ -11,6 +11,9 @@ sound_switch:false,\
 max_frame:740,\
 blender:true,\
 slot:"head",\
+dialog:{\
+    video_list_show:true\
+},\
 resolution:{\
 switch:false,\
 default_size:1,\

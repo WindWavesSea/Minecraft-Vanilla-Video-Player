@@ -1,0 +1,1 @@
+$data modify storage video:video_dialog_show_list $(number) set from storage video:video_dialog_show_list $(last_value)

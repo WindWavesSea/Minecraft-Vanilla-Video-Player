@@ -1,0 +1,1 @@
+$data remove storage video:video_list $(dialog_show_delete_id)

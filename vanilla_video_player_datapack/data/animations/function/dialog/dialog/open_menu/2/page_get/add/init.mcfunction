@@ -1,6 +1,6 @@
 $scoreboard objectives add temp.dialog.get_page.player.$(player_number) dummy
 
-$scoreboard players operation #main.max_video_id temp.dialog.get_page.player.$(player_number) = #max_value video_list
+$scoreboard players operation #main.max_video_id temp.dialog.get_page.player.$(player_number) = #max_value video_dialog_show_list
 
 $execute if score #debug video_setting matches 3 run tellraw @s [{text:"#main.max_video_id"},{text:" : "},{score:{name:"#main.max_video_id",objective:"temp.dialog.get_page.player.$(player_number)"}}]
 

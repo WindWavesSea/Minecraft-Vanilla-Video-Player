@@ -1,0 +1,1 @@
+$return run data get storage video:$(video_name) video.dialog.video_list_show

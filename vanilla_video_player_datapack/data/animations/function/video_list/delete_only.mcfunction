@@ -14,5 +14,7 @@ scoreboard players remove #max_value video_list 1
 
 scoreboard players set #reset.id.tick_run video_list 1
 
+execute if function animations:video_delete/delete_only/execute/if_function/storage/video/video_list_show/0 run function animations:video_delete/delete_only/show_delete_init
+
 data remove storage video:setting temp.video_list.delete_only.delete_id
 data remove storage video:setting temp.video_list.delete_only.delete_video_name

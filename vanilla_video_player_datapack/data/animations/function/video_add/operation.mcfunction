@@ -1,4 +1,5 @@
 #玩家唯一值计算后赋予
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"-----------------operation.start-------------"}]
 
 #加上增加量
 scoreboard players operation #temp video_list += #add_variable video_list
@@ -11,6 +12,9 @@ scoreboard players set #end video_list 0
 
 scoreboard players operation #end video_list += #temp video_list
 
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"video.id: "},{score:{name:"#end",objective:"video_list"}}]
+
+
 #重置计算临时储存
 scoreboard players reset #temp video_list
 
@@ -22,3 +26,5 @@ execute store result score #max_value video_list run scoreboard players get #end
 execute store result storage video:temp_add_video max_value int 1 run scoreboard players get #end video_list
 
 scoreboard players reset #end video_list
+
+execute if score #debug video_setting matches 3 run tellraw @s [{text:"-----------------operation.end-------------"}]
