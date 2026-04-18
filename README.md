@@ -274,7 +274,11 @@
 
 #### language
 
+非必填项
+
 在dialog中视频名称显示的语言文字以及对应的翻译
+
+如果使用dialog显示视频必须填写
 
 ##### default_language
 
