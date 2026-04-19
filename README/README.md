@@ -479,7 +479,7 @@ By CR_019
 ### 删除所有玩家的播放设置
 
 ```Minecraft_Command
-/function animations:player_video_play/storages/delete/all_storages/delete
+/function animations:player_video_play/storages/delete/all_storages/run
 ```
 
 ***
