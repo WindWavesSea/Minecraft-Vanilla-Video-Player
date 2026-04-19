@@ -1,3 +1,3 @@
+scoreboard players set #reset video_setting 1
 function animations:reset/reset
-function animations:reset/scoreboards
-function animations:reset/storages
+

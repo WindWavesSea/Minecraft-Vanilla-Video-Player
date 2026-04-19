@@ -11,5 +11,7 @@ scoreboard players set @s video_uuid_storages 0
 
 scoreboard players operation @s video_uuid_storages += #temp video_uuid_storages
 
+scoreboard players operation #number video_uuid_storages = @s video_uuid_storages
+
 #重置计算临时储存
 scoreboard players reset #temp video_uuid_storages

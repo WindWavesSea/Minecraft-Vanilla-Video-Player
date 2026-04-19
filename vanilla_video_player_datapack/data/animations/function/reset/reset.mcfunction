@@ -1,2 +1,3 @@
 execute if score #max_value video_list matches 1.. run function animations:video_list/delete_all
+execute unless score #max_value video_list matches 1.. run scoreboard players set #reset_video video_setting 2
 execute if score #number video_uuid_storages matches 1.. run function animations:player_video_play/storages/delete/all_storages/run

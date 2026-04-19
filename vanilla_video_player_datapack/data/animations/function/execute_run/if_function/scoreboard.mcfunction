@@ -1,1 +1,1 @@
-scoreboard objectives remove video_setting
+execute if score #load video_setting matches 1 run list

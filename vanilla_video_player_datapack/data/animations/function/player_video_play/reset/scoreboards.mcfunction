@@ -1,1 +1,3 @@
 scoreboard objectives remove video_uuid_storages
+
+function animations:player_video_play/storages/delete/reset/scoreboards

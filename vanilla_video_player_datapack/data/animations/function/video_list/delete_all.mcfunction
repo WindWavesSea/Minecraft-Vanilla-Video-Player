@@ -1,1 +1,2 @@
 execute if score #max_value video_list matches 1.. run scoreboard players set #all_delete video_list 1
+execute if score #reset video_setting matches 1.. run scoreboard players add #reset_video video_setting 1
