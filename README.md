@@ -33,7 +33,7 @@
       - [max\_frame](#max_frame)
       - [slot](#slot)
       - [dialog](#dialog)
-      	- [video\_list_show](video_list_show)
+        - [video\_list\_show](#video_list_show)
       - [resolution](#resolution)
         - [switch](#switch)
         - [default\_size](#default_size)
@@ -61,6 +61,7 @@
     - [如何导出序列图片](#如何导出序列图片)
     - [推荐尺寸](#推荐尺寸)
   - [注意事项](#注意事项)
+  - [Debug项](#debug项)
 
 ## 序言
 
@@ -479,7 +480,7 @@ By CR_019
 ### 删除所有玩家的播放设置
 
 ```Minecraft_Command
-/function animations:player_video_play/storages/delete/all_storages/delete
+/function animations:player_video_play/storages/delete/all_storages/run
 ```
 
 ***
@@ -563,3 +564,9 @@ By CR_019
 
 由于mojang石山代码，导致播放完的图片会一直在内存中无法清理，容易触发爆内存的问题，不建议在内存过小的情况下使用
 Bug:[MC-277837](https://bugs.mojang.com/browse/MC/issues/MC-277837)
+
+## Debug项
+
+你需要使用如下指令开启Debug
+```/scoreboard players set #debug video_setting 1```
+**注意** 此Debug项仅为Datapack出现问题或者开发数据包时使用。
