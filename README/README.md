@@ -568,5 +568,7 @@ Bug:[MC-277837](https://bugs.mojang.com/browse/MC/issues/MC-277837)
 ## Debug项
 
 你需要使用如下指令开启Debug
+
 ```/scoreboard players set #debug video_setting 1```
-**注意** 此Debug项仅为Datapack出现问题或者开发数据包时使用。
+
+**注意：** 此Debug项仅在Datapack出现问题或者开发数据包时使用。
