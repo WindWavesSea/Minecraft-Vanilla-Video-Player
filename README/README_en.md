@@ -1,86 +1,349 @@
-# **Minecraft Vanilla Video Player**
+# Minecraft Vanilla Video Player
 
-[English](README_en.md) [简体中文](README.md)
+[English](README/README_en.md) [简体中文](README.md)
 
-by WindWaves_Sea
+> by WindWaves_Sea
+>
+> This article is also published on the author's [Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player), [Bilibili Column](https://www.bilibili.com/opus/1182083830058582057), the project's [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/) repository, and [Modrinth](https://modrinth.com/datapack/vanilla-video-player/).
 
-This article is also published on the author's [Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player), [Bilibili](https://www.bilibili.com/opus/1182083830058582057), and the [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/) repository.
+---
 
-## **Preface**
+## Table of Contents
 
-This project provides a datapack-based solution to play image sequences in vanilla Minecraft, achieving a "pseudo-video" playback effect.
+- [Minecraft Vanilla Video Player](#minecraft-vanilla-video-player)
+  - [Introduction](#introduction)
+    - [Warning](#warning)
+  - [Download](#download)
+  - [Video Requirements](#video-requirements)
+    - [Play 60 FPS Video with Increased Tick Rate](#play-60-fps-video-with-increased-tick-rate)
+    - [Play 60 FPS Video with Frame Interpolation](#play-60-fps-video-with-frame-interpolation)
+  - [Dialog Menu](#dialog-menu)
+  - [Parameter Explanation](#parameter-explanation)
+  - [Example](#example)
+  - [How It Works](#how-it-works)
+  - [Commands](#commands)
+  - [About Image Sequences](#about-image-sequences)
+  - [Recommended Resolution](#recommended-resolution)
+  - [Notes](#notes)
+  - [Debug Mode](#debug-mode)
 
-Key features of this datapack:
+---
 
-* Automatically calculates frame rates and batch processes frame files.  
-* Provides adaptive frame rates to improve performance.  
-* Offers interfaces for quick configuration and playback of image sequences from resource packs.  
-* Utilizes variables to rapidly add and play sequences.
+## Introduction
 
-### **Warning**
+This project is based on a datapack and provides pseudo-video playback in vanilla Minecraft by displaying image sequences.
 
-By default, this **datapack** uses the head slot to trigger the equipment overlay. If you do not wish to use the head slot, you must manually modify the code (required for V2.0).
+Main purposes of this datapack:
 
-The resource pack includes a transparent model for the overlay item to achieve a seamless visual effect without appearing as a physical item.
+- Automatically calculate frame rates and batch process frame files.
+- Provide adaptive frame rate to improve performance.
+- Provide interfaces for quick configuration.
+- Play image sequences stored in resource packs.
 
-**Image Sequence**: Refers to a series of individual static image files (e.g., .png) saved from each frame of a video or animation, arranged in numerical order.
+It also provides several **variables** for quickly adding image-sequence videos through resource packs.
 
-## **Download**
+---
 
-You can download the prerequisite package from [Modrinth](https://modrinth.com/datapack/vanilla-video-player/) or [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/).
+### Warning
 
-## **Video Requirements**
+This **datapack** uses the head equipment slot by default to trigger the camera overlay.  
+If you do not want to use the head slot, you can modify it inside the datapack manually (currently required in V2.0).
 
-Videos must be converted into a **PNG image sequence**.
+The resource pack includes a transparent model used as the equipped overlay item, creating a pseudo "no item equipped" playback effect.
 
-### **Playing 60FPS Video with Tick Rate Acceleration**
+> **Image Sequence** means saving every frame of a video or animation as an independent static image file, arranged in order by frame number. It is widely used in post-production, 3D animation, visual effects, and other fields due to high compatibility and lossless quality.
 
-It is recommended to use 20FPS videos. If you must use 60FPS, you need to set the game tick rate to 60:
+---
 
-/tick rate 60
+## Download
 
-### **Playing 60FPS Video with Frame Interpolation**
+You can download this package from:
 
-In the video configuration, set frame\_rate: 60\.
+- [Modrinth](https://modrinth.com/datapack/vanilla-video-player/)
+- [GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)
 
-## **Dialog Box**
+---
 
-The menu can be opened using the hotkey **G** or via the game menu. To play a video, you must use the G key or the following command:
+## Video Requirements
 
-dialog show @s animations:open\_menu
+Videos must be converted into **PNG image sequences**.
 
-Players need to select the video resolution:
+---
 
-* 1920\*1080 (16:9)  
-* 2560\*1080 (16:10)
+### Play 60 FPS Video with Increased Tick Rate
 
-**Note:** Please select your language in the language settings before using the video playback page.
+20 FPS videos are recommended.
 
-## **Configuration**
-
-### **Parameter Analysis**
-
-* **frame\_zero**: Defines the leading zeros in the filename. For video0000.png, use {frame\_zero: "000"}.  
-* **frame**: Controls the current frame being played (e.g., {frame: 1}).  
-* **path**: The path to the items in the resource pack (e.g., {video: "text\_video/"}).  
-* **name**: The name matching the frame prefix. Should match the storage name.  
-* **blender**: Set to true if using Blender-exported sequences.  
-* **frame\_rate**: Custom frame rate for servers (requires function-permission-level=3). Also used for adaptive frame rate logic.  
-* **sound**: The sound event defined in sounds.json.  
-* **sound\_switch**: true/false to enable or disable audio.  
-* **max\_frame**: Total number of frames in the video.  
-* **slot**: The equipment slot for the overlay (head, body, chest, etc.).  
-* **resolution**: Configuration for multi-resolution support.
-
-### **Examples**
-
-#### **Function Configuration**
+If using a 60 FPS video, set the tick rate to 60:
 
 ```mcfunction
+/tick rate 60
+````
 
+This sets the target game tick speed.
+
+---
+
+### Play 60 FPS Video with Frame Interpolation
+
+Set the original frame rate in the config:
+
+```txt
+frame_rate:60
+```
+
+---
+
+## Dialog Menu
+
+You can open the menu by pressing **G** or through command:
+
+```mcfunction
+/dialog show @s animations:open_menu
+```
+
+Players need to choose the video resolution.
+
+* 1920×1080 = 16:9
+* 2560×1080 = 16:10
+
+If you want to use the playback page, please select a language first in settings.
+
+---
+
+## Parameter Explanation
+
+### frame_zero
+
+Number of leading zeros before the frame number.
+
+Example:
+
+`video0000.png`
+
+Then:
+
+```json
+{frame_zero:"000"}
+```
+
+---
+
+### frame
+
+Current frame number.
+
+```json
+{frame:1}
+```
+
+---
+
+### path
+
+Output file path.
+
+```json
+{path:"animation:school/"}
+```
+
+---
+
+### name
+
+Video prefix name.
+
+Example:
+
+`video0000.png`
+
+Then:
+
+```json
+{name:"video"}
+```
+
+Shorter names are recommended for better macro performance.
+
+---
+
+### blender
+
+Enable if the sequence was exported from Blender.
+
+```json
+{blender:true}
+```
+
+---
+
+### blender_name
+
+Leave empty when using Blender.
+
+```json
+{blender_name:""}
+```
+
+---
+
+### frame_rate
+
+Original frame rate of the video.
+
+Used for adaptive frame rate.
+
+For servers:
+
+```txt
+function-permission-level=3
+```
+
+---
+
+### sound
+
+Audio event name defined in `sounds.json`.
+
+---
+
+### sound_switch
+
+Enable or disable sound playback.
+
+```json
+{sound_switch:true}
+```
+
+---
+
+### max_frame
+
+Maximum frame count.
+
+---
+
+### slot
+
+Equipment slot used for overlay.
+
+Supported values:
+
+* head
+* body
+* chest
+* feet
+* legs
+* mainhand
+* offhand
+* saddle
+
+---
+
+### dialog
+
+#### video_list_show
+
+Whether the video is shown in the menu.
+
+```json
+{video_list_show:true}
+```
+
+---
+
+### resolution
+
+Used for multiple aspect ratio support.
+
+Path format:
+
+```txt
+path/resolution/frame.png
+```
+
+Example:
+
+```txt
+animation:school/16:9/0001.png
+```
+
+#### switch
+
+Enable multi-resolution mode.
+
+```json
+true / false
+```
+
+#### default_size
+
+Default ratio key.
+
+```txt
+default_size:1
+```
+
+#### size_list
+
+* 1 = 16:9
+* 2 = 16:10
+* 3 = 3:2
+* 4 = 4:3
+
+---
+
+### language
+
+Used for translated names in the dialog menu.
+
+#### default_language
+
+```txt
+1: en-us
+2: zh-cn
+3: zh-hk
+4: zh-mo
+5: zh-sg
+6: zh-tw
+7: en-au
+8: en-ca
+9: en-in
+10: en-gb
+11: fr-fr
+12: de-de
+13: ja
+14: kn
+15: es-es
+16: ar
+17: ko
+18: in-in
+```
+
+#### Translation Text
+
+Format:
+
+```txt
+language_code:"Translated Text"
+```
+
+Example:
+
+```txt
+en-us:"School"
+```
+
+---
+
+## Example
+
+### Video Configuration
+
+```mcfunction
 data merge storage video:school \
-{video:\
-{frame_zero:"000",\
+{video:{\
+frame_zero:"000",\
 frame:"0",\
 path:"animation:school/",\
 name:"school",\
@@ -90,81 +353,157 @@ sound:"",\
 sound_switch:false,\
 max_frame:740,\
 blender:true,\
-slot:"head",\
-resolution:{\
-switch:false,\
-default_size:1,\
-size_list:{\
-1:true,\
-2:false,\
-3:false,\
-4:false\
-}\
-},\
-language:{\
-default_language:"en-us",\
-en-us:"School",\
-zh-cn:"学校"\
-}\
-}\
-}
+slot:"head"\
+}}
 
 function animations:video_add/main with storage video:school video
-
 ```
 
-#### **sounds.json**
+> The last `function` line must be placed at the end of the config file, and the name after `video:` must match the `name` value.
+
+---
+
+## sounds.json
 
 ```json
-
- {
-  "video_text":{
-  "sounds":[
-	{
-	 "name": "animation:video/video_text",
-	 "stream": true,
-	 "volume": 0.8,
-	 "weight": 1
-	}
-	]
-	},
-	"":{
-	 "name": "",
-	 "stream": true,
-	 "volume": 0.8,
-	 "weight": 1
-	}
- }
-
+{
+  "video_text": {
+    "sounds": [
+      {
+        "name": "animation:video/video_text",
+        "stream": true,
+        "volume": 0.8,
+        "weight": 1
+      }
+    ]
+  }
+}
 ```
 
-## **Mechanism**
+Then use:
 
-Based on the research of camera\_overlay components. It maps each frame of the video to a specific item model used as a full-screen GUI overlay.
+```json
+{sound:"video_text"}
+```
 
-## **Commands**
+---
 
-* **Start Playback**: /function animations:start {video\_name:"name"}  
-* **Stop**: /function animations:stop  
-* **Pause**: /function animations:pause  
-* **Resume**: /function animations:continue\_play  
-* **Clear All Video Configs**: /function animations:video\_list/delete\_all
+## How It Works
 
-## **About Image Sequences**
+Based on Minecraft's `camera_overlay` equipment component.
 
-### **How to Export**
+---
 
-* **Adobe Animate**: File \> Export \> Export Image Sequence.  
-* **Premiere Pro**: File \> Export \> Media (Select PNG Sequence).  
-* **Aseprite**: File \> Export \> Save As (Include numbers in filename).
+## Commands
 
-### **Recommended Resolution**
+### Start Playback
 
-Since Minecraft supports adaptive textures, it is recommended to export at **960 \* 540** to save disk space and reduce resource pack size.
+```mcfunction
+/function animations:start {video_name:"video_name"}
+```
 
-## **Notes & Known Issues**
+---
 
-Due to Mojang's engine limitations, images that have been played may remain in memory and are not easily cleared, which can lead to "Out of Memory" errors.
+### Stop Playback
 
-* **Bug Reference**: [MC-277837](https://bugs.mojang.com/browse/MC/issues/MC-277837)  
-* Usage is not recommended on systems with very low RAM.****
+```mcfunction
+/function animations:stop
+```
+
+---
+
+### Pause Playback
+
+```mcfunction
+/function animations:pause
+```
+
+---
+
+### Resume Playback
+
+```mcfunction
+/function animations:continue_play
+```
+
+---
+
+### Delete One Player's Playback Data
+
+```mcfunction
+/function animations:player_video_play/storages/delete/delete_player {name:"player"}
+```
+
+---
+
+### Delete All Player Data
+
+```mcfunction
+/function animations:player_video_play/storages/delete/all_storages/run
+```
+
+---
+
+### Delete One Video Config
+
+```mcfunction
+/function animations:video_list/delete_only {name:"video"}
+```
+
+---
+
+### Delete All Video Configs
+
+```mcfunction
+/function animations:video_list/delete_all
+```
+
+---
+
+## About Image Sequences
+
+You can export image sequences with:
+
+* Adobe Animate
+* Premiere Pro
+* Apple Motion
+* Processing
+* Aseprite
+
+Export them as PNG sequences.
+
+---
+
+## Recommended Resolution
+
+Minecraft supports adaptive textures.
+
+Recommended size:
+
+**960 × 540**
+
+This reduces storage usage and resource pack size.
+
+---
+
+## Notes
+
+Due to a Mojang issue, played textures may remain in memory and cannot be fully cleared.
+
+This may cause memory overflow on low-memory systems.
+
+Bug Report:
+
+[MC-277837](https://bugs.mojang.com/browse/MC/issues/MC-277837)
+
+---
+
+## Debug Mode
+
+Enable Debug Mode with:
+
+```mcfunction
+/scoreboard players set #debug video_setting 1
+```
+
+> Only use Debug Mode when troubleshooting datapack issues or developing with this datapack.
