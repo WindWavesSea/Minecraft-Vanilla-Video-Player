@@ -3,7 +3,7 @@
 [English](README/README_en.md) [简体中文](README.md)
 > by 洛风澜_Sea(WindWaves_Sea)
 >
-> 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库以及[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)
+> 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库以及[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)或者[Curseforge](https://www.curseforge.com/minecraft/data-packs/video-playback-engine/)
 >
 > 本文亦发布于作者[Blog](https://blog.windwaves.top/post/minecraft_vanilla_video_player)和[B站专栏](https://www.bilibili.com/opus/1182083830058582057)以及此项目的[GitHub](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)仓库
 >
@@ -92,7 +92,7 @@
 
 ## 下载
 
-可以前往[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)和[Github](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)下载此前置包
+可以前往[Modrinth](https://modrinth.com/datapack/vanilla-video-player/)和[Github](https://github.com/WindWavesSea/Minecraft-Vanilla-Video-Player/)或者[Curseforge](https://www.curseforge.com/minecraft/data-packs/video-playback-engine/)下载此前置包
 
 ***
 
