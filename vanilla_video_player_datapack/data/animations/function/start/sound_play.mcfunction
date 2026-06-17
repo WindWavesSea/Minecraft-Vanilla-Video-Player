@@ -1,1 +1,1 @@
-$playsound $(sound) music @s
+$playsound $(sound) player @s
